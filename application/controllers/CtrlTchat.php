@@ -6,7 +6,7 @@ class CtrlTchat extends CI_Controller {
 	{
 		$this->load->model('Model_Tchat');
 		$data["Titre"] = "Mes messages";
-		$data["MesMessage"] = $this->Model_Tchat->getTchat();
+		$data["MesMessage"] = $this->Model_Tchat->getMessage();
 		$this->load->view('Tchat',$data);
 	}
 }
