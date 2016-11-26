@@ -67,7 +67,7 @@ CODE POUR METTRE LES MATCH ENSEMBLE
 CARREE + INSIDE BULLE AVEC NOM ET PROFIL
 
  -->
-	<div class="services" id="service">
+	<div class="services" id="service" style="background-color: #23527c">
 		<div class="container">
 			<h5 class="sub-h"></h5>
 		    <h3 class="tittle">match</h3>
