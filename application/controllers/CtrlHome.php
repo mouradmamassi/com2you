@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class CtrlHome extends CI_Controller {
 	public function index()
 	{
+		$this->load->model('Model_Profil');
+		$data = $this->Model_Profil->getProfil();
 		$dejaAuth = FALSE;
 		if ($dejaAuth){
 			$this->redirectTrajetMatch(1);
@@ -14,12 +16,12 @@ class CtrlHome extends CI_Controller {
 	
 	public function login()
 	{
-		return($this->load->view('Home/Login'));
+		$this->load->view('Home/Login');
 	}
 	
 	public function inscription()
 	{
-		return($this->load->view('Home/Inscription'));
+		$this->load->view('Home/Inscription');
 	}
 	
 	public function logon($login,$mdp)
@@ -28,7 +30,7 @@ class CtrlHome extends CI_Controller {
 		if ($valideConnect){				
 			$this->redirectTrajetMatch(0);
 		}else{
-			return($this->load->view('Home/Login'));
+			$this->load->view('Home/Login');
 		}
 	}
 	

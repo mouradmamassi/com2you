@@ -28,14 +28,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 	function goToInscription()
 	{
-		console.log("toto");
- 		window.location.href = "<?php echo site_url('CtrlHome/inscription);?>";
+ 		window.location.href = "<?php echo site_url('CtrlHome/inscription');?>";
 	}
 	
 	function goToConnexion()
 	{
-		
-		window.location.href = "<?php echo site_url('CtrlHome/inscription);?>";
+		window.location.href = "<?php echo site_url('CtrlHome/login');?>";
 	}
 	
 </script>

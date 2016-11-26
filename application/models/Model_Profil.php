@@ -26,10 +26,12 @@ class Model_Profil extends CI_Model{
 //            'description' => 'Ceci est ma description/biographie'
 //        );
 
-
-        $data = 1;
-
+		$sql = $this->db->query('select * from user');
+		foreach($sql->result() as $row){
+            $data[] = $row;
+        }
         return $data;
+
 
     }
 }
