@@ -1,7 +1,7 @@
 <?php
 class Model_MatchVoyageur extends CI_Model 
 {
-	public function Model_MatchVoyageur.php()
+	public function Model_MatchVoyageur()
 	{
 		$sql = $this->db->query('
 		--select de mes mtach	
@@ -13,4 +13,3 @@ class Model_MatchVoyageur extends CI_Model
 		return ($data);
 	}
 }
-?>
