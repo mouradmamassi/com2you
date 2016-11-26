@@ -34,6 +34,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
     <!-- //js -->
     <!--web-fonts-->
@@ -56,6 +58,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
             });
         });
+    </script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
     </script>
     <!--//end-smoth-scrolling-->
 </head>
@@ -138,19 +150,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--/news-->
 <div class="row col-md-8 col-md-offset-2 col-xs-9 col-xs-offset-1">
     <div class="row">
-        <div class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1 train">
+        <div class="col-md-2 col-sm-4 col-xs-4 col-md-offset-1 train">
             <a href="#"> <img src="<?php echo (base_url());?>images/train.png" style="border-radius: 50%; margin-bottom: 2em"/></a>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 tram">
+        <div class="col-md-2 col-sm-4 col-xs-4 tram">
             <a href="#"> <img src="<?php echo (base_url());?>images/tram.png" style="border-radius: 50%; margin-bottom: 2em"/></a>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 rer">
+        <div class="col-md-2 col-sm-4 col-xs-4 rer">
             <a href="#"> <img src="<?php echo (base_url());?>images/rer.png" style="border-radius: 50%; margin-bottom: 2em"/></a>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 bus">
+<!--    </div>-->
+<!--    <div class="row">-->
+        <div class="col-md-2 col-md-offset-0 col-sm-4 col-xs-4 col-xs-offset-2 bus">
             <a href="#"> <img src="<?php echo (base_url());?>images/bus.png" style="border-radius: 50%;margin-bottom: 2em"/></a>
         </div>
-        <div class="col-md-2  col-sm-2 col-xs-2 avion">
+        <div class="col-md-2  col-sm-4 col-xs-4 avion">
             <a href="#"> <img src="<?php echo (base_url());?>images/avion.png" style="border-radius: 50%; margin-bottom: 2em" /></a>
         </div>
         <!--        <span style="border-radius: 50%;"></span>-->
@@ -223,55 +237,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <option>N5</option>
     </select>
 <!--    <div class="row" style="margin-top: 2em">-->
-       date <input type="text" class="form-control" placeholder="Text input">
 
 
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" id="checkboxSuccess" value="option1">
-                    lundi
-                </label>
+
+<br>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><div class="panel-heading">
+                <h4 class="panel-title">
+                  Date
+                </h4>
             </div>
-
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" id="checkboxWarning" value="option1">
-                    mardi
-                </label>
+            </a>
+            <div id="collapse1" class="panel-collapse collapse in">
+                date <input type="text" class="form-control" placeholder="Text input" id="datepicker">
             </div>
-
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" id="checkboxError" value="option1">
-                    mercredi
-                </label>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                <h4 class="panel-title">
+                    Par Jours
+                </h4>
+                </a>
             </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" id="checkboxSuccess" value="option1">
-                jeudi
-            </label>
+            <div id="collapse2" class="panel-collapse collapse">
+<!--                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,-->
+<!--                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad-->
+<!--                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea-->
+<!--                    commodo consequat.</div>-->
+                <div class="row" style="margin-top: 2em">
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2" >
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Lundi" data-off="<i class='fa fa-pause'></i>Lundi" type="checkbox">
+                    </div>
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mardi" data-off="<i class='fa fa-pause'></i>Mardi" type="checkbox">
+                    </div>
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mecredi" data-off="<i class='fa fa-pause'></i>Mecredi" type="checkbox">
+                    </div>
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Jeudi" data-off="<i class='fa fa-pause'></i>Jeudi" type="checkbox">
+                    </div>
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Vendredi" data-off="<i class='fa fa-pause'></i>Vendredi" type="checkbox">
+                    </div>
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Samedi" data-off="<i class='fa fa-pause'></i>Samedi" type="checkbox">
+                    </div>
+                    <div class="checkbox col-md-3 col-sm-2 col-sx-2">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Dimanche" data-off="<i class='fa fa-pause'></i>Dimanche" type="checkbox">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" id="checkboxWarning" value="option1">
-                vendredi
-            </label>
-        </div>
+    </div>
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" id="checkboxError" value="option1">
-                samedi
-            </label>
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" id="checkboxError" value="option1">
-                dimanche
-            </label>
-        </div>
+
 
         <input class="btn btn-success" type="submit" value="Ajouter">
 <!--        <input type="text" class="form-control" placeholder="Text input" style="margin-top: 2rem">-->

@@ -1,54 +1,54 @@
-div.train:hover{
-    color: #00CC00;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    -webkit-transition: width .6s ease-in-out;
-    -moz-transition: width .6s ease-in-out;
-    -o-transition: width .6s ease-in-out;
-    -ms-transition: width .6s ease-in-out;
-    transition: width .6s ease-in-out;
+/*div.train:hover{*/
+    /*color: #00CC00;*/
+    /*z-index: 1;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*top: 0;*/
+    /*-webkit-transition: width .6s ease-in-out;*/
+    /*-moz-transition: width .6s ease-in-out;*/
+    /*-o-transition: width .6s ease-in-out;*/
+    /*-ms-transition: width .6s ease-in-out;*/
+    /*transition: width .6s ease-in-out;*/
 
-}
-div.tram:hover{
-    color: #00CC00;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    -webkit-transition: width .6s ease-in-out;
-    -moz-transition: width .6s ease-in-out;
-    -o-transition: width .6s ease-in-out;
-    -ms-transition: width .6s ease-in-out;
-    transition: width .6s ease-in-out;
+/*}*/
+/*div.tram:hover{*/
+    /*color: #00CC00;*/
+    /*z-index: 1;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*top: 0;*/
+    /*-webkit-transition: width .6s ease-in-out;*/
+    /*-moz-transition: width .6s ease-in-out;*/
+    /*-o-transition: width .6s ease-in-out;*/
+    /*-ms-transition: width .6s ease-in-out;*/
+    /*transition: width .6s ease-in-out;*/
 
-}
-div.bus:hover{
-    color: #00CC00;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    -webkit-transition: width .6s ease-in-out;
-    -moz-transition: width .6s ease-in-out;
-    -o-transition: width .6s ease-in-out;
-    -ms-transition: width .6s ease-in-out;
-    transition: width .6s ease-in-out;
+/*}*/
+/*div.bus:hover{*/
+    /*color: #00CC00;*/
+    /*z-index: 1;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*top: 0;*/
+    /*-webkit-transition: width .6s ease-in-out;*/
+    /*-moz-transition: width .6s ease-in-out;*/
+    /*-o-transition: width .6s ease-in-out;*/
+    /*-ms-transition: width .6s ease-in-out;*/
+    /*transition: width .6s ease-in-out;*/
 
-}
+/*}*/
 
-div.rer:hover{
-    color: #00CC00;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    -webkit-transition: width .6s ease-in-out;
-    -moz-transition: width .6s ease-in-out;
-    -o-transition: width .6s ease-in-out;
-    -ms-transition: width .6s ease-in-out;
-    transition: width .6s ease-in-out;
+/*div.rer:hover{*/
+    /*color: #00CC00;*/
+    /*z-index: 1;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*top: 0;*/
+    /*-webkit-transition: width .6s ease-in-out;*/
+    /*-moz-transition: width .6s ease-in-out;*/
+    /*-o-transition: width .6s ease-in-out;*/
+    /*-ms-transition: width .6s ease-in-out;*/
+    /*transition: width .6s ease-in-out;*/
 
-}
+/*}*/
 
