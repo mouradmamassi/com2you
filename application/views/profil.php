@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<link href="<?php echo(base_url());?>Content/site.css" type="text/css" rel="stylesheet" media="all">
     <title>We Plan a Society & People Category Flat Bootstrap Responsive website Template | Home :: w3layouts</title>
     <!--mobile apps-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,6 +61,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
             });
         });
+        
+        function trajetMatch(){
+			window.location.href = "<?php echo site_url('CtrlHome/redirectTrajetMatch');?>";
+		}
     </script>
     <!--//end-smoth-scrolling-->
 </head>
@@ -227,7 +231,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             <div class="clearfix"></div>
 
-
+			<input type="button" value="Valider" class="btn valider" onclick="trajetMatch()/>
         </div>
     </div>
 </div>
@@ -248,10 +252,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--/contact-->
 
+<<<<<<< HEAD
 <!-- footer -->
 
 
 <!-- //footer -->
+=======
+
+>>>>>>> d87d14041da770111194ed26e3f44d4639072c82
 <!--//main content start-->
 <!--start-smooth-scrolling-->
 <script type="text/javascript">
