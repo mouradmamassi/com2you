@@ -2,11 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class CtrlTrajet extends CI_Controller {
-
-    public function Trajet()
+    public function index()
     {
-        $this->load->model('Model_trajet');
-        $data['montrajet'] = $this->Model_trajet->getProfil();
-        $this->load->view('trajet');
+        //$this->load->model('Model_trajet');
+        //$data['montrajet'] = $this->Model_trajet->getProfil();
+        return($this->load->view('trajet'));
     }
 }

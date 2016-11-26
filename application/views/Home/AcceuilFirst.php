@@ -25,13 +25,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="<?php echo(base_url()); ?>/Scripts/modernizr.custom.js"></script>
 
 <script src="<?php echo(base_url()); ?>/Scripts/jquery-1.11.1.min.js"></script> 
-<script type="javascript">
+<script type="text/javascript">
 	function goToInscription()
+	{
+		console.log("toto");
+		$.ajax({
+			type:"GET",
+			url : "<?php echo(site_url()); ?>/CtrlHome/inscription",
+			success : function(result)
+			{
+				$(body).html(result);
+			}
+			
+			});
+	}
+	
+	function goToConnexion()
 	{
 		
 		$.ajax({
 			type:"GET",
-			url : "<?php echo(base_url()); ?>CtrlHome/login"
+			url : "<?php echo(site_url()); ?>/CtrlHome/login",
+			success : function(result)
+			{
+				$(body).html(result);
+			}
 			
 			});
 	}
@@ -71,12 +89,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+  
 <!--//end-smoth-scrolling-->
-</head>
-<body>
+
      <!--start-banner-->
-	<div class="banner">
+<div id="body">     
+     <!-- AJOUT DU STYLE POUR ANNULER LE BACKGROUND IMAGE SANS TOUCHER AU CSS DU TEMPLATE-->
+	<div class="banner" style="background: #146eb4">
 		<div class="container">
             <div class="banner-slider">
 				<div class="callbacks_container">
@@ -143,20 +164,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  			</script>
 				</div>
 			</div>
-			<input type="button" value="Connecter" class="connexion"/>
-			
-			<div class="signup SignupForm">
-                <div class="SignupForm-header">
-                	Nouveau sur Twitter ?
-                </div>
-                <a href="https://twitter.com/signup" role="button" class="SignupForm-submit u-block u-textCenter js-signup btn" data-component="signup_callout" data-element="dropdown" style="color:#ffffff">
-                	S'inscrire
-                </a>
-              </div>
+			<div style="text-align: center">
+				<input type="button" value="Connecter" class="connexion" style="width: 58%" onclick="goToConnexion()"/>
+			</div>
+			<div style="text-align: center">
+				<input type="button" value="Inscription" class="connexion" style="width: 58%;background-color: #c4c4c4" onclick="goToInscription()"/>
+			</div>
 		</div>
 	</div>
-</body>
-</html>
+</div>
 <!--//end-banner-->
 
 
