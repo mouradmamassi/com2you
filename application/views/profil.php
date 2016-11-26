@@ -152,9 +152,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <img src="<?php echo (base_url()); ?>images/g8.jpg" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
                     </div>
                     <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-3">
-                        <h4> <?php  echo $monprofil->nom ?></h4>
-                        <p>Communication Digitale</p>
-                        <p>Croisé 12 fois</p>
+                        <h4> <?php  echo $monprofil['nom'] ?></h4>
+                        <p><?php  echo $monprofil['communication'] ?></p>
+                        <p>Croisé <?php  echo $monprofil['nbcroise'] ?> fois</p>
                     </div>
 
                     <div class="col-md-2 col-sm-3  col-xs-2 ">
@@ -167,11 +167,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="row">
                 <div class="col-md-9 col-md-offset-3 " style="top:1rem">
-                    <p>Ceci est ma description/biographie ....</p>
+                    <p><?php  echo $monprofil['description'] ?> ....</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9 col-md-offset-2 " style="top:2rem">
+                    <ul class="list-group">
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'aime - le dessin, la danse classique <span class="glyphicon glyphicon-plus " style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai visité - Suisse, Chine <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je veux visiter - Corée du Nord <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai besion de - apprendre l'espagnol <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je sais - tricoter <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                    </ul>
                 </div>
             </div>
 
             <div class="clearfix"></div>
+
+
         </div>
     </div>
 </div>
