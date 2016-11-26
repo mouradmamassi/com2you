@@ -29,29 +29,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	function goToInscription()
 	{
 		console.log("toto");
-		$.ajax({
-			type:"GET",
-			url : "<?php echo(site_url()); ?>/CtrlHome/inscription",
-			success : function(result)
-			{
-				$(body).html(result);
-			}
-			
-			});
+ 		window.location.href = "<?php echo site_url('CtrlHome/inscription);?>";
 	}
 	
 	function goToConnexion()
 	{
 		
-		$.ajax({
-			type:"GET",
-			url : "<?php echo(site_url()); ?>/CtrlHome/login",
-			success : function(result)
-			{
-				$(body).html(result);
-			}
-			
-			});
+		window.location.href = "<?php echo site_url('CtrlHome/inscription);?>";
 	}
 	
 </script>
