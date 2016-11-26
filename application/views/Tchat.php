@@ -1,6 +1,5 @@
 <?php
 
-$Titre
 
 foreach ($MesMessage as $unMes)
 {

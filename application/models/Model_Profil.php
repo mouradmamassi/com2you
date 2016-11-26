@@ -9,13 +9,23 @@
 class Model_Profil extends CI_Model{
 
     public function getProfil(){
-        $sql = $this->db->query('
-        select * from x
-        ');
+//        $sql = $this->db->query('
+//        select * from x
+//        ');
+//
+//        foreach($sql->result() as $row){
+//            $data[] = $row;
+//        }
+//        return $data;
 
-        foreach($sql->result() as $row){
-            $data[] = $row;
-        }
+        $data[]= array(
+            'nom' => 'Hervé P',
+            'communication' => 'Communication Digitale',
+            'nbcroise' => '12',
+            'description' => 'Ceci est ma description/biographie'
+        );
+
         return $data;
+
     }
 }
