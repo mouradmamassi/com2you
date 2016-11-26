@@ -8,7 +8,7 @@ class CtrlMatchVoyageur extends CI_Controller {
 	{
 		//$this->load->model('Model_MatchVoyageur');
 		$data["Titre"] = "Mes messages";
-		$this->load->view('MatchVoyageur',);
+		$this->load->view('MatchVoyageur');
 	}
 }
 
