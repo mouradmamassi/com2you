@@ -5,9 +5,9 @@ class CtrlProfil extends CI_Controller {
 
     public function Profil()
     {
-//        $this->load->model('Model_Profil');
+        //$this->load->model('Model_Profil');
 //       // $data['monprofil'] = $this->Model_profil->getProfil();
-//        $data['monprofil'] = $this->Model_Profil->getProfil();
+       //$data['monprofil'] = $this->Model_Profil->getProfil();
         $data['monprofil']= array(
             'nom' => 'Hervé P',
             'communication' => 'Communication Digitale',
