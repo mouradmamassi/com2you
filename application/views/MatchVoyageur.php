@@ -59,69 +59,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//end-smoth-scrolling-->
 </head>
 <body>
-	<!--w3layouts-->
-     <!--agileits-->
-	<!-- main content start-->
-     <!--start-home-->
+<!--
+
+BEGIN HEADER A USE INSIDE A ANTHOR VIEW JINCLUDE
+
+-->
 	<div id="home" class="header">
-			<!--start-header-->
-<!--            <div class="header-strip">
-			   <div class="container">
-				<p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> CALL - US - FREE: &nbsp;888 - 585 - 9858</p>
-				<div class="social-icons">
-					<ul>
-						<li><a href="#"><i class="facebook"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>
-						<li><a href="#"><i class="google-plus"> </i></a></li>	
-						<li><a href="#"><i class="dribble"> </i></a></li>										
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			  </div>
-			</div>-->
 		<div class="header-top">
-		  <div class="container ">
-		     <div class="logo">
-		     	<a href="index.html"><p>LOGO</p>
-			 		<p class="top-para">Match your travel</p>
-			 	</a>
-			 </div>
-            <div class="main-nav">
-				  <span class="menu"></span>
-				 <div class="top-menu">
-							<ul class="link-effect-12" id="link-effect-12">
-								<li class="active"><a href="index.html"><span>Home</span></a></li>
-								<li><a href="#about" class="scroll"><span>About</span></a></li>
-								<li><a href="#service" class="scroll"><span>Services</span></a></li>
-								<li><a href="#gallery" class="scroll"><span>Gallery</span></a></li>
-								<li><a href="#news" class="scroll"><span>News & Events</span></a></li>
-								<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
-							</ul>
+			<div class="container ">
+				<div class="logo">
+					<a href="index.html"><p>LOGO</p>
+						<p class="top-para">Match your travel</p>
+					</a>
 				</div>
-             </div>
-			<!-- script-for-menu -->
+				<div class="main-nav">
+				  	<span class="menu"></span>
+				 	<div class="top-menu">
+						<ul class="link-effect-12" id="link-effect-12">
+							<li class="active"><a href="index.html"><span>Home</span></a></li>
+							<li><a href="#about" class="scroll"><span>About</span></a></li>
+							<li><a href="#service" class="scroll"><span>Services</span></a></li>
+							<li><a href="#gallery" class="scroll"><span>Gallery</span></a></li>
+							<li><a href="#news" class="scroll"><span>News & Events</span></a></li>
+							<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+						</ul>
+					</div>
+	         	</div>
+				<!-- script-for-menu -->
 				<script>
-				$( "span.menu" ).click(function() {
-				  $( ".top-menu" ).slideToggle( "slow", function() {
-				    // Animation complete.
-				  });
-				});
-			</script>
-	<!--End-top-nav-script-->
-		<!--//end-header-->
-		<div class="clearfix"></div>
-    </div>	
-	<!--
-	CODE POUR METTRE LES MATCH ENSEMBLE 
-	CARREE + INSIDE BULLE AVEC NOM ET PROFIL
-	
-	 -->
+					$( "span.menu" ).click(function() {
+					  $( ".top-menu" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+<!--
+
+FIN DU HEADER A USE INSIDE A ANTHOR VIEW JINCLUDE
+
+-->
+
+
+<!--
+CODE POUR METTRE LES MATCH ENSEMBLE 
+CARREE + INSIDE BULLE AVEC NOM ET PROFIL
+
+ -->
 	<div class="services" id="service">
 		<div class="container">
-		<h5 class="sub-h"></h5>
+			<h5 class="sub-h"></h5>
 		    <h3 class="tittle">match</h3>
-           <div class="serve-grids-top">
-			     
+	       	<div class="serve-grids-top">		     
 				<div class="col-md-6 service-box hvr-float-shadow">
 					<div class="col-md-6 news-img">
 						<img src="<?php echo(base_url()); ?>images/n1.jpg" title="couple" />
@@ -166,47 +158,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>72% d'affinite</p>
 					</div>
 				</div>
-				
-			<div class="clearfix"> </div>
+				<div class="clearfix"> </div>
 			</div>
+		</div>
 	</div>
-
-
-
-
-
-FIN DE MON CODE SUITE INUTILE
-
-
-
-
-
-
-<!-- //footer -->
-	<!--//main content start-->
-	<!--start-smooth-scrolling-->
-						<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-								<!--end-smooth-scrolling-->
-		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!-- //for bootstrap working -->
-<!-- for bootstrap working -->
-	<script src="<?php echo(base_url()); ?>/Scripts/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-
-
 </body>
 </html>
