@@ -183,6 +183,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
 
+            <hr>
+            <div class="row col-md-offset-3 col-sm-offset-3 col-sx-offset-3">
+                <h5 style="margin-bottom: 2rem; margin-left: 1rem">Lier un Compte</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-5 col-xs-offset-1 col-md-offset-4 col-sm-offset-4 ">
+                    <span class="glyphicon glyphicon-plus-sign" style="font-size: 50px"></span>
+                    <p>Deezer / Spotify </p>
+                </div>
+                <div class="col-md-2 col-sm-2  col-xs-6">
+                    <span class="glyphicon glyphicon-plus-sign"  style="font-size: 50px"></span>
+                    <p>LinkedIn </p>
+                </div>
+
+            </div>
+
+
             <div class="clearfix"></div>
 
 
