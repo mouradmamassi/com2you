@@ -6,7 +6,7 @@ class Model_Tchat extends CI_Model
 		$data[] = array(
 			"nom"=> "Herve",
 			"prenom"=>"toto"
-		)
+		);
 		return ($data);
 	}
 }
