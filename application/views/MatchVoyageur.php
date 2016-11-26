@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 
-<?php include('header.php'); ?>
+<?php include('Layout/header.php'); ?>
 
 <!--
 CODE POUR METTRE LES MATCH ENSEMBLE 

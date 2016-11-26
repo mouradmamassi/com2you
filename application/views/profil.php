@@ -189,11 +189,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="row">
                 <div class="col-md-2 col-sm-2 col-xs-5 col-xs-offset-1 col-md-offset-4 col-sm-offset-4 ">
-                    <span class="glyphicon glyphicon-plus-sign" style="font-size: 50px"></span>
+                    <a href="#"><span class="glyphicon glyphicon-plus-sign" style="font-size: 50px"></span></a>
                     <p>Deezer / Spotify </p>
                 </div>
                 <div class="col-md-2 col-sm-2  col-xs-6">
-                    <span class="glyphicon glyphicon-plus-sign"  style="font-size: 50px"></span>
+                    <a href="#"><span class="glyphicon glyphicon-plus-sign"  style="font-size: 50px"></span></a>
                     <p>LinkedIn </p>
                 </div>
 
