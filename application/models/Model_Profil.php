@@ -9,6 +9,7 @@
 class Model_Profil extends CI_Model{
 
     public function getProfil(){
+<<<<<<< HEAD
 //        $sql = $this->db->query('
 //        select * from x
 //        ');
@@ -25,6 +26,9 @@ class Model_Profil extends CI_Model{
             'description' => 'Ceci est ma description/biographie'
         );
 
+=======
+        $data = 1;
+>>>>>>> 077d2b3b67055e78e0fdcf5843e49c966e21548c
         return $data;
 
     }
