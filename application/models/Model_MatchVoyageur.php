@@ -1,0 +1,16 @@
+<?php
+class Model_MatchVoyageur extends CI_Model 
+{
+	public function Model_MatchVoyageur.php()
+	{
+		$sql = $this->db->query('
+		--select de mes mtach	
+		');
+		foreach($sql->result() as $row)
+		{
+			$data[]=$row;
+		}
+		return ($data);
+	}
+}
+?>
