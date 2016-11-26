@@ -4,19 +4,7 @@
 
 <script src="<?php echo(base_url()); ?>/Scripts/jquery-1.11.1.min.js"></script> 
 <script type="text/javascript">
-	function goToLoginIn()
-	{
-		
-		$.ajax({
-			type : "post",
-			url : "<?php echo(site_url()); ?>/CtrlHome/logon/toto/toto",
-			success : function(reponse)
-			{
-				$(body).html(reponse);
-			}
-			
-			});
-	}
+
 	$( document ).ready(function() {
     // DOM ready
 
@@ -108,7 +96,7 @@ function testLocalStorageData() {
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
             <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
             <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin">
+            <form class="form-signin" action="<?php echo base_url(); ?>index.php/CtrlHome/verifLogin">
                 <span id="reauth-email" class="reauth-email"></span>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>

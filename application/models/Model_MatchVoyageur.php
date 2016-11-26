@@ -13,3 +13,5 @@ class Model_MatchVoyageur extends CI_Model
 		return ($data);
 	}
 }
+
+?>

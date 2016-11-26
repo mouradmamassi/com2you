@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<link href="<?php echo(base_url());?>Content/site.css" type="text/css" rel="stylesheet" media="all">
     <title>We Plan a Society & People Category Flat Bootstrap Responsive website Template | Home :: w3layouts</title>
     <!--mobile apps-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,6 +61,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
             });
         });
+        
+        function trajetMatch(){
+			window.location.href = "<?php echo site_url('CtrlHome/redirectTrajetMatch');?>";
+		}
     </script>
     <!--//end-smoth-scrolling-->
 </head>
@@ -202,7 +206,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             <div class="clearfix"></div>
 
-
+			<input type="button" value="Valider" class="btn valider" onclick="trajetMatch()/>
         </div>
     </div>
 </div>
@@ -223,58 +227,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--/contact-->
 
-<!-- footer -->
-<div class="footer">
-    <div class="container">
-        <div class="footer-grids">
-            <div class="col-md-4 footer-grid-left">
-                <h3>twitter feed</h3>
-                <ul>
-                    <li><a href="single.html">It is a long established fact that a reader will
-                            be distracted by the readable content of a page when looking at
-                            its layout.</a><span>15 minutes ago</span></li>
-                    <li><a href="mailto:info@example.com" class="cols">@NASA</a> & <a href="mailto:info@example.com" class="cols">
-                            @orbital science</a> <a href="single.html">readable content of a page when looking at
-                            its layout</a><span>45 minutes ago</span></li>
-                </ul>
-            </div>
-            <div class="col-md-4 footer-grid-left">
-                <h3>Newsletter</h3>
-                <form action="#" method="post">
-                    <input type="email" value="enter your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter your email address';}" required="">
-                    <input type="submit" value="Submit" >
-                </form>
-            </div>
-            <div class="col-md-4 footer-grid-left">
-                <h3>about us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-						<span>But I must explain to you how all this mistaken idea of denouncing
-						pleasure and praising pain was born and I will give you a complete
-						account of the system, and expound the actual teachings of the
-						great explorer.</span>
-                </p>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-bottom-left">
-                <p>&copy 2016 We Plan. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts.</a></p>
-            </div>
-            <div class="footer-bottom-right">
-                <ul class="social-icons2">
-                    <li><a href="#"> </a></li>
-                    <li><a href="#" class="fb"> </a></li>
-                    <li><a href="#" class="in"> </a></li>
-                    <li><a href="#" class="dott"> </a></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!-- //footer -->
+
 <!--//main content start-->
 <!--start-smooth-scrolling-->
 <script type="text/javascript">
