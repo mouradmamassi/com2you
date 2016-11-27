@@ -33,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 	function goToInscription()
 	{
- 		window.location.href = "<?php echo site_url('CtrlHome/inscription');?>";
+ 		//window.location.href = "<?php echo site_url('CtrlHome/inscription');?>";
 	}
 	
 	function goToConnexion()
@@ -57,12 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
+
 </script>
 
 
@@ -93,16 +88,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	      <div class="slide-1"></div>
 	      <div class="hero">
 	        <hgroup>
-	            <img src="<?php echo(base_url()); ?>images/g3.jpg"/>
+	        <br />
+	        <br />
+	        	<h4 style="color:#ffffff">
+	        	Vous voyagez seul dans les transports qui sont dits <br/>"en commun"</h4>
+	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" height="20px"/>
 	        </hgroup>
-	        
 	      </div>
 	    </div>
 	    <div class="item slides">
 	      <div class="slide-2"></div>
 	      <div class="hero">        
 	        <hgroup>
-	            <img src="<?php echo(base_url()); ?>images/g3.jpg"/>
+	        	        <br />
+	        <br />
+	            <h4 style="color:#ffffff">Vous voyagez seul dans les transports qui sont dits <br/>"en commun"</h4>
+	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" height="50px"/>
 	        </hgroup>       
 	      </div>
 	    </div>
@@ -110,7 +111,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	      <div class="slide-3"></div>
 	      <div class="hero">        
 	        <hgroup>
-	            <img src="<?php echo(base_url()); ?>images/g3.jpg"/>
+	        	        <br />
+	        <br />
+	            <h4 style="color:#ffffff">Transformer vos temps d’attente et de transport</h4>
+	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" height="50px"/>
 	        </hgroup>
 	      </div>
 	    </div>
@@ -118,12 +122,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	</div>
      <!-- AJOUT DU STYLE POUR ANNULER LE BACKGROUND IMAGE SANS TOUCHER AU CSS DU TEMPLATE-->
-	<div style="text-align: center">
-		<input type="button" value="Connecter" class="connexion" style="width: 58%" onclick="goToConnexion()"/>
+     <div style="display: flex;">	
+     	<div style="text-align: center;display: inline; width: 47%;margin-left: 0px">
+		<input type="button" value="Connecter" class="connexion" style="" onclick="goToConnexion()"/>
 	</div>
-	<div style="text-align: center">
-		<input type="button" value="Inscription" class="connexion" style="width: 58%;background-color: #c4c4c4" onclick="goToInscription()"/>
+	<div style="text-align: center;display: inline; width: 47%;margin-left: 15px;">
+		<input type="button" value="Inscription" class="connexion" style="" onclick="goToInscription()"/>
 	</div>
+	</div>
+
 </div>
 </div>
 <!--//end-banner-->

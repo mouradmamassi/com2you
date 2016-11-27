@@ -78,12 +78,12 @@ class CtrlHome extends CI_Controller {
 	
 	public function redirectTrajetMatch()
 	{
-		//$nbTrajet = 1;
-		//if ($nbTrajet==0){
-		//	redirect('/CtrlTrajet/trajet');
-		//}else{
-		//	redirect('/CtrlMatchVoyageur/index');
-		//}
+		$nbTrajet = 1;
+		if ($nbTrajet==0){
+			redirect('/CtrlTrajet/trajet');
+		}else{
+			redirect('/CtrlMatchVoyageur/MatchVoyageur');
+		}
 	}
 }
 
