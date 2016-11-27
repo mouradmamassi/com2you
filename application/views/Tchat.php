@@ -155,9 +155,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    <h3 > Tchat </h3>
 	     </div>
 	 </div>
-	 <div class="row" style="height:80%">
-		<div  style="width:100%;background-color:#e2e21d;height:400px">
-			    	toto		    	
+	 <div class="row" style="height:80%"  >
+		<div  id="messages"  style="width:100%;background-color:#e2e21d;">
+			        	
 		</div>
 	</div>
 	  <div class="row" style="height:8%">	    
@@ -169,20 +169,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			    </div> 
 		
 	 </div>
-   </div>                  
+   </div>        
+   
+   <input type="hidden" id="senderId" name="senderId" value="<?php  echo $_SESSION['com2user'];?>"/>         
 <script type="text/javascript">
 	
-	
-	function sendMessage() 
-	{
-		
+		function sendMessage() 
+	{		
 			    $.ajax({
-			        url: "http://localhost:8080/Com2You/index.php/CtrlTchat/sendMessage/"+$("#txtMessage").val() 
-			  
+			        url: "http://localhost:8080/Com2You/index.php/CtrlTchat/sendMessage/"+$("#txtMessage").val() 			  
 			    }).done(
 			      function myfunction(messages) {
-			      	console.log(messages)
+			       //  	console.log(messages)
+			        $("#messages").empty();			        
+			        $.each(   messages,  function myfunction(i, item) {
+			        	        
+					             $("#messages").append();
+					});            
+					            
+					  
+			       
 			    });
+			    );
 					
 		
 	}

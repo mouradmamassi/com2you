@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = "http://localhost/Com2You/";
+$config['base_url'] = "http://192.168.1.13:8080/Com2You/";
 
 $config['global_xss_filtering'] = TRUE;
 
