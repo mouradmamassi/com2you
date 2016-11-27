@@ -5,7 +5,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html style="background-image: <?php echo(base_url());?>images/logo.png !impotant">
 <head>
 <title>We Plan a Society & People Category Flat Bootstrap Responsive website Template | Home :: w3layouts</title>
 <!--mobile apps-->
@@ -63,13 +63,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
-  
-<!--//end-smoth-scrolling-->
 
      <!--start-banner-->
-<div id="body">     
+<div id="body" >     
 		<div class="banner" style="background: #4aaead">
-			<div class="container">
+			<div class="container" >
 			<div style="text-align: center">
 	            <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 	  <!-- Overlay -->
@@ -77,9 +75,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
-	    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-	    <li data-target="#bs-carousel" data-slide-to="1"></li>
-	    <li data-target="#bs-carousel" data-slide-to="2"></li>
+	    <li data-target="#bs-carousel" data-slide-to="0" class="active" style="width: 20px;height: 20px"></li>
+	    <li data-target="#bs-carousel" data-slide-to="1" style="width: 20px;height: 20px"></li>
+	    <li data-target="#bs-carousel" data-slide-to="2" style="width: 20px;height: 20px"></li>
 	  </ol>
 	  
 	  <!-- Wrapper for slides -->
@@ -88,11 +86,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	      <div class="slide-1"></div>
 	      <div class="hero">
 	        <hgroup>
-	        <br />
-	        <br />
-	        	<h4 style="color:#ffffff">
+<br/>
+	        	<h4 style="color:#ffffff" style="height: 20px">
 	        	Vous voyagez seul dans les transports qui sont dits <br/>"en commun"</h4>
-	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" height="20px"/>
+	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" style="height: 300px"/>
 	        </hgroup>
 	      </div>
 	    </div>
@@ -100,10 +97,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	      <div class="slide-2"></div>
 	      <div class="hero">        
 	        <hgroup>
-	        	        <br />
-	        <br />
-	            <h4 style="color:#ffffff">Vous voyagez seul dans les transports qui sont dits <br/>"en commun"</h4>
-	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" height="50px"/>
+	        	<br />
+	        
+	            <h4 style="color:#ffffff" style="height: 20px">Une application pour passer d'un croisement de regard à une conversation</h4>
+	            <img src="<?php echo(base_url());?>images/slide2.png" class="img-responsive" style="height: 285px;margin-bottom: 15px"/>
 	        </hgroup>       
 	      </div>
 	    </div>
@@ -114,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        	        <br />
 	        <br />
 	            <h4 style="color:#ffffff">Transformer vos temps d’attente et de transport</h4>
-	            <img src="<?php echo(base_url());?>images/slide1.png" class="img-responsive" height="50px"/>
+	            <img src="<?php echo(base_url());?>images/slide3.png" class="img-responsive" style="height: 300px"/>
 	        </hgroup>
 	      </div>
 	    </div>
@@ -122,6 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	</div>
      <!-- AJOUT DU STYLE POUR ANNULER LE BACKGROUND IMAGE SANS TOUCHER AU CSS DU TEMPLATE-->
+     <div>
      <div style="display: flex;">	
      	<div style="text-align: center;display: inline; width: 47%;margin-left: 0px">
 		<input type="button" value="Connecter" class="connexion" style="" onclick="goToConnexion()"/>
@@ -130,11 +128,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<input type="button" value="Inscription" class="connexion" style="" onclick="goToInscription()"/>
 	</div>
 	</div>
+	</div>
 
 </div>
 </div>
 <!--//end-banner-->
-
 
 <script type="style">
 	/*

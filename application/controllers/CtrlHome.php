@@ -78,7 +78,7 @@ class CtrlHome extends CI_Controller {
 	
 	public function redirectTrajetMatch()
 	{
-		$nbTrajet = 1;
+		$nbTrajet = 0;
 		if ($nbTrajet==0){
 			redirect('/CtrlTrajet/trajet');
 		}else{

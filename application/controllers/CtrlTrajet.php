@@ -8,7 +8,7 @@ class CtrlTrajet extends CI_Controller {
         //$data['montrajet'] = $this->Model_trajet->getProfil();
         return($this->load->view('trajet'));
     }
-<<<<<<< HEAD
+
 
     public function creattrajet()
     {
@@ -44,6 +44,5 @@ class CtrlTrajet extends CI_Controller {
         return($this->load->view('Tchat'));
     }
 
-=======
->>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
+
 }

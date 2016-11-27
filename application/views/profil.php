@@ -76,34 +76,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--start-home-->
 <div id="home" class="header">
     <!--start-header-->
-    <div class="header-strip">
-        <div class="container">
-            <p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> CALL - US - FREE: &nbsp;888 - 585 - 9858</p>
-            <div class="social-icons">
-                <ul>
-                    <li><a href="#"><i class="facebook"> </i></a></li>
-                    <li><a href="#"><i class="twitter"> </i></a></li>
-                    <li><a href="#"><i class="google-plus"> </i></a></li>
-                    <li><a href="#"><i class="dribble"> </i></a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <div class="header-top">
-        <div class="container">
-            <div class="logo"><a href="index.html"><h1>We <span>Plan</span></h1>
-                    <p class="top-para">Plan for the Future</p></a></div>
+    
+    <div class="header-top" style="margin-top: -25px !important">
+        <div class="container" >
+            <div class="logo" ><a href="index.html"><img src="<?php echo(base_url()); ?>images/logo.png" class="image-responsive" style="width: 70px;"/>
+                </a></div>
             <div class="main-nav">
                 <span class="menu"></span>
                 <div class="top-menu">
                     <ul class="link-effect-12" id="link-effect-12">
-                        <li class="active"><a href="index.html"><span>Home</span></a></li>
-                        <li><a href="#about" class="scroll"><span>About</span></a></li>
-                        <li><a href="#service" class="scroll"><span>Services</span></a></li>
-                        <li><a href="#gallery" class="scroll"><span>Gallery</span></a></li>
-                        <li><a href="#news" class="scroll"><span>News & Events</span></a></li>
-                        <li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+                        <li class="active"><a href="index.html"><span>Mon profil</span></a></li>
+                        <li><a href="#about" class="scroll"><span>Mes affinités</span></a></li>
+                        <li><a href="#service" class="scroll"><span>Ajouter un trajet</span></a></li>
+                        <li><a href="#gallery" class="scroll"><span>Discussion</span></a></li>
+                        <li><a href="#news" class="scroll"><span>Réglages</span></a></li>
+                        <li><a href="#contact" class="scroll"><span>Se déconnecter</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -120,10 +107,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="clearfix"></div>
         </div>
         <!--start-banner-->
-
     </div>
 </div>
-<!--//end-banner-->
+
 <!-- app-->
 <div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog about" role="document">
@@ -162,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <?php } ?>
 
                     </div>
-                    <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-12">
+                    <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-12 news-text">
                         <h4 style="text-align: center"> <?php  echo $user[0]->FIRSTNAME .' '.substr($user[0]->LASTNAME, 0, 1);  ; ?></h4>
                         <p><?php  echo $user[0]->DESCRIPTION ?></p>
 <!--                        <p>Croisé --><?php // echo $monprofil['nbcroise'] ?><!-- fois</p>-->
@@ -215,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <hr>
             <?php if($id != 2 ) {?>
             <div class="row" style="text-align: center">
-                <a href="<?php echo base_url(); ?>CtrlTchat/Tchat/<?php echo $id ?>" type="button" class="btn btn-default btn-sm">
+                <a href="<?php echo base_url(); ?>index.php/CtrlTchat/Tchat/4" type="button" class="btn btn-default btn-sm">
                     <img width="24" height="24" src="<?php echo (base_url());?>images/chat1600.png"> TChat
                 </a>
             </div>

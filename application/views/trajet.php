@@ -36,7 +36,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-
+<link href="<?php echo(base_url());?>Content/site.css" type="text/css" rel="stylesheet" media="all">
+<link href="<?php echo(base_url()); ?>/Content/style.css" type="text/css" rel="stylesheet" media="all"> 
     <!-- //js -->
     <!--web-fonts-->
     <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -68,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         
         function addTravel()
         {
-			window.location.assign("http://localhost:8080/Com2You/index.php/CtrlMatchVoyageur/index");
+			window.location.href ="http://192.168.137.235:8080/Com2You/index.php/CtrlMatchVoyageur/MatchVoyageur";
 		}
     </script>
     <!--//end-smoth-scrolling-->
@@ -80,24 +81,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--start-home-->
 <div id="home" class="header">
     <!--start-header-->
-    <div class="header-strip">
-        <div class="container">
-            <p class="phonenum"><span class="glyphicon glyphicon-earphone"></span> CALL - US - FREE: &nbsp;888 - 585 - 9858</p>
-            <div class="social-icons">
-                <ul>
-                    <li><a href="#"><i class="facebook"> </i></a></li>
-                    <li><a href="#"><i class="twitter"> </i></a></li>
-                    <li><a href="#"><i class="google-plus"> </i></a></li>
-                    <li><a href="#"><i class="dribble"> </i></a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <div class="header-top">
-        <div class="container">
-            <div class="logo"><a href="index.html"><h1>Com2<span>You</span></h1>
-                    <p class="top-para">Plan for the Future</p></a></div>
+    
+    <div class="header-top" style="margin-top: -25px !important">
+        <div class="container" >
+            <div class="logo" ><a href="index.html"><img src="<?php echo(base_url()); ?>images/logo.png" class="image-responsive" style="width: 70px;"/>
+                </a></div>
             <div class="main-nav">
                 <span class="menu"></span>
                 <div class="top-menu">
@@ -146,49 +134,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     jQuery(function($) {
         $(".swipebox").swipebox();
     });
+    function disabledFunction(btnClick){
+		$(btnClick).disableSelection();
+	}
 </script>
 <!--//gallery-->
 
 <!--/news-->
-<div class="row col-md-8 col-md-offset-2 col-xs-9 col-xs-offset-1">
+<div class="row col-md-8 col-md-offset-2 col-xs-9 col-xs-offset-1" style="margin-top: 5px">
     <div class="row">
         <div class="col-md-2 col-sm-4 col-xs-4 col-md-offset-1 train">
-            <a href="#"> <img src="<?php echo (base_url());?>images/train.png" style="border-radius: 50%; margin-bottom: 2em"/></a>
+            <a href="#"> <input type="button" value="Train" style="border-radius: 50%; margin-bottom: 2em; background-color:#e34e00; color: #fff; height: 60px;width: 60px;text-align: center;font-size: 12pt;" onclick="disabledFunction()" /></a>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-4 tram">
-            <a href="#"> <img src="<?php echo (base_url());?>images/tram.png" style="border-radius: 50%; margin-bottom: 2em"/></a>
+            <a href="#"> <input type="button" value="Tram" style="border-radius: 50%; margin-bottom: 2em; background-color:#e34e00; color: #fff; height: 60px;width: 60px;text-align: center;font-size: 12pt"/></a>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-4 rer">
-            <a href="#"> <img src="<?php echo (base_url());?>images/rer.png" style="border-radius: 50%; margin-bottom: 2em"/></a>
+            <a href="#"> <input type="button" value="RER" style="border-radius: 50%; margin-bottom: 2em; background-color:#e34e00; color: #fff; height: 60px;width: 60px;text-align: center;font-size: 12pt"/></a>
         </div>
 <!--    </div>-->
 <!--    <div class="row">-->
         <div class="col-md-2 col-md-offset-0 col-sm-4 col-xs-4 col-xs-offset-2 bus">
-            <a href="#"> <img src="<?php echo (base_url());?>images/bus.png" style="border-radius: 50%;margin-bottom: 2em"/></a>
+            <a href="#"> <input type="button" value="Bus" style="border-radius: 50%; margin-bottom: 2em; background-color:#e34e00; color: #fff; height: 60px;width: 60px;text-align: center;font-size: 12pt"/></a>
         </div>
         <div class="col-md-2  col-sm-4 col-xs-4 avion">
-            <a href="#"> <img src="<?php echo (base_url());?>images/avion.png" style="border-radius: 50%; margin-bottom: 2em" /></a>
+            <a href="#"> <input type="button" value="Avion" style="border-radius: 50%; margin-bottom: 2em; background-color:#e34e00; color: #fff; height: 60px;width: 60px;text-align: center;font-size: 12pt"/></a>
         </div>
         <!--        <span style="border-radius: 50%;"></span>-->
     </div>
     <div class="row">
         <div class="col-md-6">
-            ville de depart<select class="form-control" style="margin-bottom: 2rem">
-                <option>ville 1</option>
-                <option>ville 2</option>
-                <option>ville 3</option>
-                <option>ville 4</option>
-                <option>ville 5</option>
+            <p style="color: #fff">Ville de départ</p><select class="form-control" style="margin-bottom: 2rem">
+                <option>...</option>
+                <option>Dijon</option>
+                <option>Paris</option>
+                <option>Nantes</option>
+                <option>Lille</option>
+                <option>Besançon</option>
             </select>
         </div>
 
         <div class="col-md-6">
-            Gare de depart <select class="form-control">
-                <option>A1</option>
-                <option>A2</option>
-                <option>A3</option>
-                <option>A4</option>
-                <option>A5</option>
+            <p style="color: #fff">Gare de départ</p> <select class="form-control">
+                <option>...</option>
+                <option>Dijon Ville</option>
+                <option>Porte neuve</option>
             </select>
         </div>
 
@@ -198,22 +188,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <div class="row">
         <div class="col-md-6">
-            ville d'arrivée <select class="form-control" style="margin-bottom: 2rem">
-                <option>ville 1</option>
-                <option>ville 2</option>
-                <option>ville 3</option>
-                <option>ville 4</option>
-                <option>ville 5</option>
+            <p style="color: #fff">Ville d'arrivée</p> <select class="form-control" style="margin-bottom: 2rem">
+                <option>...</option>
+                <option>Dijon</option>
+                <option>Paris</option>
+                <option>Nantes</option>
+                <option>Lille</option>
+                <option>Besançon</option>
             </select>
         </div>
 
         <div class="col-md-6">
-            Gare d'arrivée <select class="form-control">
-                <option>A1</option>
-                <option>A2</option>
-                <option>A3</option>
-                <option>A4</option>
-                <option>A5</option>
+            <p style="color: #fff">Gare d'arrivée</p> <select class="form-control">
+                <option>...</option>
+                <option>Gare TGV Franche Comté</option>
+                <option>Viotte</option>
+                <option>Mouillere</option>
             </select>
         </div>
 
@@ -221,22 +211,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 
 
-    A partir de <select class="form-control" style="margin-top: 2em">
-        <option>H1</option>
-        <option>H2</option>
-        <option>H3</option>
-        <option>H4</option>
-        <option>H5</option>
+    <p style="color: #fff">A partir de</p> <select class="form-control" style="margin-top: 2em">
+    	<option>...</option>
+        <option>00h</option>
+        <option>01h</option>
+        <option>02h</option>
+        <option>03h</option>
+        <option>04h</option>
+        <option>21h</option>
     </select>
 
 
 
-    Liste des trains<select class="form-control" style="margin-top: 2em">
-        <option>N1</option>
-        <option>N2</option>
-        <option>N3</option>
-        <option>N4</option>
-        <option>N5</option>
+	<p style="color: #fff">Liste des trains</p><select class="form-control" style="margin-top: 2em" name="nbtrain">
+		<option>...</option>
+        <option>21h01 -> 21h52</option>
+        <option>21h09 -> 22h05</option>
     </select>
 <!--    <div class="row" style="margin-top: 2em">-->
 
@@ -244,22 +234,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <br>
     <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
+       <!-- <div class="panel panel-default">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><div class="panel-heading">
                 <h4 class="panel-title">
                   Date
                 </h4>
             </div>
             </a>
-            <div id="collapse1" class="panel-collapse collapse in">
-                date <input type="text" class="form-control" placeholder="Text input" id="datepicker">
-            </div>
-        </div>
+            <div id="collapse1" class="panel-collapse collapse in">-->
+                <p style="color: #fff">Date</p> <input type="text" class="form-control" style="margin-bottom: 10px" placeholder="Text input" id="datepicker">
+           <!-- </div>
+        </div>-->
+        <p style="color: #fff"> </p>
         <div class="panel panel-default">
             <div class="panel-heading">
+            <p style="color: #fff"> </p>
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                
                 <h4 class="panel-title">
-                    Par Jours
+                    Récurrence
                 </h4>
                 </a>
             </div>
@@ -298,7 +291,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-        <input class="btn btn-success" type="button" value="Ajouter" onclick="addTravel">
+        <input class="connexion" type="button" value="Ajouter" onclick="addTravel()">
 <!--        <input type="text" class="form-control" placeholder="Text input" style="margin-top: 2rem">-->
 <!--    </div>-->
 </div>

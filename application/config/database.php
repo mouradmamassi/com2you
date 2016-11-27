@@ -64,7 +64,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168.1.13:7777',
+	'hostname' => '192.168.137.235:7777',
 //	'hostname' => '127.0.0.1',
 	'username' => 'com2you',
 	'password' => 'com2you',
