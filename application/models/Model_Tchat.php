@@ -1,16 +1,4 @@
 <?php
-<<<<<<< HEAD
-class Model_Tchat extends CI_Model 
-{
-	public function getTchat()
-	{
-		$data[] = array(
-			"nom"=> "Herve",
-			"prenom"=>"toto"
-		);
-		return ($data);
-	}
-=======
 
 class Model_Tchat extends CI_Model{
 
@@ -45,6 +33,5 @@ class Model_Tchat extends CI_Model{
         return $this->getMessages( $receiverId);
 
     }
->>>>>>> d87d14041da770111194ed26e3f44d4639072c82
 }
 ?>

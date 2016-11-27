@@ -69,6 +69,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             $( "#datepicker" ).datepicker();
         } );
     </script>
+
+    <script type="text/javascript">
+
+//        function createtrajet(){
+//
+//            ajaxRequest= $.ajax({
+//                url: "<?php //echo base_url()?>//index.php/CtrlTrajet/creattrajet",
+//                type: "post",
+//                data: 'test'
+//            });
+//
+//            /*  request cab be abort by ajaxRequest.abort() */
+//
+//            ajaxRequest.done(function (response, textStatus, jqXHR){
+//                // show successfully for submit message
+//                alert("ok");
+//
+//            });
+//        }
+    </script>
     <!--//end-smoth-scrolling-->
 </head>
 <body>
@@ -169,7 +189,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <!--        <span style="border-radius: 50%;"></span>-->
     </div>
-   <form>
+
 
 <!--    <label for="title">Title</label>-->
 <!--    <input type="input" name="title" /><br />-->
@@ -180,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--    <input type="submit" name="submit" value="Create news item" />-->
 
 
-
+<form method="post" action="<?php echo base_url()?>index.php/CtrlTrajet/creattrajet">
     <div class="row">
         <div class="col-md-6">
             Ville de depart<select class="form-control" style="margin-bottom: 2rem" name="villedepart">
@@ -262,7 +282,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             </a>
             <div id="collapse1" class="panel-collapse collapse in">
-                date <input type="text" class="form-control" placeholder="Text input" id="datepicker">
+                date <input type="text" class="form-control" placeholder="Text input" name="date" id="datepicker">
             </div>
         </div>
         <div class="panel panel-default">
@@ -280,25 +300,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--                    commodo consequat.</div>-->
                 <div class="row" style="margin-top: 2em">
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2" >
-                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Lundi" data-off="<i class='fa fa-pause'></i>Lundi" type="checkbox">
+                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Lundi" data-off="<i class='fa fa-pause'></i>Lundi" name="lundi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mardi" data-off="<i class='fa fa-pause'></i>Mardi" type="checkbox">
+                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mardi" data-off="<i class='fa fa-pause'></i>Mardi" name="mardi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mecredi" data-off="<i class='fa fa-pause'></i>Mecredi" type="checkbox">
+                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mecredi" data-off="<i class='fa fa-pause'></i>Mecredi" name="mercredi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Jeudi" data-off="<i class='fa fa-pause'></i>Jeudi" type="checkbox">
+                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Jeudi" data-off="<i class='fa fa-pause'></i>Jeudi" name="jeudi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Vendredi" data-off="<i class='fa fa-pause'></i>Vendredi" type="checkbox">
+                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Vendredi" data-off="<i class='fa fa-pause'></i>Vendredi" name="vendredi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Samedi" data-off="<i class='fa fa-pause'></i>Samedi" type="checkbox">
+                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Samedi" data-off="<i class='fa fa-pause'></i>Samedi" name="samedi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Dimanche" data-off="<i class='fa fa-pause'></i>Dimanche" type="checkbox">
+                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Dimanche" data-off="<i class='fa fa-pause'></i>Dimanche" name="dimanche" type="checkbox">
                     </div>
                 </div>
             </div>
@@ -310,7 +330,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         <input class="btn btn-success" type="submit" value="Ajouter">
 
-    </form>
+</form>
     <div style="margin-bottom: 2em"></div>
 <!--        <input type="text" class="form-control" placeholder="Text input" style="margin-top: 2rem">-->
 <!--    </div>-->
@@ -339,6 +359,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $('select').select2();
 
 </script>
+
+
+
+
 <!--end-smooth-scrolling-->
 <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- //for bootstrap working -->
