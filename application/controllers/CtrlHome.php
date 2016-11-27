@@ -11,7 +11,7 @@ class CtrlHome extends CI_Controller {
 	{
 		if (isset($login)){
 			$this->load->model('Model_User');
-			$data['idUser'] = $this->Model_User->getAuthen($login,$mdp);
+			$data = $this->Model_User->getAuthen($login,$mdp);
 		}else{
 			$data['idUser']=0;
 		}
@@ -25,11 +25,12 @@ class CtrlHome extends CI_Controller {
 	
 	public function verifLogin()
 	{
-		$login = $this->input->post('inputEmail');
-		$mdp = $this->input->post('inputPassword');
+		$login = $this->input->post('login');
+		$mdp = $this->input->post('pwd');
 		$authen = $this->authen($login,$mdp);
-		$authen = 1	;		
-		if ($authen==0){
+		$test = $authen[0];
+		$test2 = $test->ID;		
+		if ($test2==0 ){
 			$this->login();
 		}else{
 			$this->redirectTrajetMatch();
@@ -43,8 +44,7 @@ class CtrlHome extends CI_Controller {
 		$this->form_validation->set_rules('inputEmail','Login !','required');
 		$this->form_validation->set_rules('inputPassword','Mdp !','required');
 		
-	}
-	
+	}	
 	
 	public function inscription()
 	{
@@ -78,12 +78,12 @@ class CtrlHome extends CI_Controller {
 	
 	public function redirectTrajetMatch()
 	{
-		$nbTrajet = 1;
-		if ($nbTrajet==0){
-			redirect('/CtrlTrajet/trajet');
-		}else{
-			redirect('/CtrlMatchVoyageur/index');
-		}
+		//$nbTrajet = 1;
+		//if ($nbTrajet==0){
+		//	redirect('/CtrlTrajet/trajet');
+		//}else{
+		//	redirect('/CtrlMatchVoyageur/index');
+		//}
 	}
 }
 
