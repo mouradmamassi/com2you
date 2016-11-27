@@ -153,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="news-grids">
             <div class="row">
 
-<<<<<<< HEAD
+
                     <div class="col-md-2 col-md-offset-2  col-sm-4 col-sm-offset-1  col-xs-9 col-xs-offset-2" style="margin-top: -10px; margin-bottom: 3rem">
                         <?php if( $id == 2 ){ ?>
                         <img src="<?php echo (base_url()); ?>images/Photo de profil.png" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
@@ -167,53 +167,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <p><?php  echo $user[0]->DESCRIPTION ?></p>
 <!--                        <p>Croisé --><?php // echo $monprofil['nbcroise'] ?><!-- fois</p>-->
                     </div>
-=======
-                    <div class="col-md-2 col-md-offset-2  col-sm-4 col-sm-offset-1  col-xs-4 col-xs-offset-1" style="margin-top: -10px; margin-bottom: 3rem">
-                        <img src="<?php echo (base_url()); ?>images/g8.jpg" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
-                    </div>
-                    <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-3">
-                        <h4> <?php  echo $monprofil['nom'] ?></h4>
-                        <p><?php  echo $monprofil['communication'] ?></p>
-                        <p>Croisé <?php  echo $monprofil['nbcroise'] ?> fois</p>
-                    </div>
 
-                    <div class="col-md-2 col-sm-3  col-xs-2 ">
-                        <button type="button" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-pencil"></span> Edit
-                        </button>
-                    </div>
+<!--                    <div class="col-md-2 col-md-offset-2  col-sm-4 col-sm-offset-1  col-xs-4 col-xs-offset-1" style="margin-top: -10px; margin-bottom: 3rem">-->
+<!--                        <img src="--><?php //echo (base_url()); ?><!--images/g8.jpg" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-3">-->
+<!--                        <h4> --><?php // echo $monprofil['nom'] ?><!--</h4>-->
+<!--                        <p>--><?php // echo $monprofil['communication'] ?><!--</p>-->
+<!--                        <p>Croisé --><?php // echo $monprofil['nbcroise'] ?><!-- fois</p>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="col-md-2 col-sm-3  col-xs-2 ">-->
+<!--                        <button type="button" class="btn btn-default btn-sm">-->
+<!--                            <span class="glyphicon glyphicon-pencil"></span> Edit-->
+<!--                        </button>-->
+<!--                    </div>-->
 
->>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
+
                     <div class="clearfix"></div>
             </div>
-            <div class="row">
-                <div class="col-md-9 col-md-offset-3 " style="top:1rem">
-                    <p><?php  echo $monprofil['description'] ?> ....</p>
-                </div>
-            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-md-9 col-md-offset-3 " style="top:1rem">-->
+<!--                    <p>--><?php // echo $monprofil['description'] ?><!-- ....</p>-->
+<!--                </div>-->
+<!--            </div>-->
 
             <div class="row">
                 <div class="col-md-9 col-md-offset-2 " style="top:2rem">
                     <ul class="list-group">
-<<<<<<< HEAD
+
                         <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>J'aime</b> - <?php foreach($favouri as $fav) echo $fav->DESCRIPTION.' '; ?></li>
                         <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>J'ai visité</b> -  <?php foreach($visited as $vis) echo $vis->COUNTRY.', '; ?></li>
                         <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>Je veux visiter</b> - <?php foreach($visit as $vis) echo $vis->COUNTRY.', '; ?></li>
                         <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>J'ai besoin de</b> - <?php foreach($skillhave as $skillh) echo $skillh->DESCRIPTION.', '; ?></li>
                         <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>Je sais</b> - <?php foreach($skill as $sk) echo $sk->DESCRIPTION.', '; ?></li>
-=======
-                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'aime - le dessin, la danse classique <span class="glyphicon glyphicon-plus " style="float: right; color: #146eb4"></span></a>
-                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai visité - Suisse, Chine <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
-                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je veux visiter - Corée du Nord <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
-                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai besion de - apprendre l'espagnol <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
-                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je sais - tricoter <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
->>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
+<!--=======-->
+<!--                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'aime - le dessin, la danse classique <span class="glyphicon glyphicon-plus " style="float: right; color: #146eb4"></span></a>-->
+<!--                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai visité - Suisse, Chine <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>-->
+<!--                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je veux visiter - Corée du Nord <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>-->
+<!--                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai besion de - apprendre l'espagnol <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>-->
+<!--                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je sais - tricoter <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>-->
+
                     </ul>
                 </div>
             </div>
 
             <hr>
-            <?php if($id != $user[0]->ID ) {?>
+            <?php if($id != 2 ) {?>
             <div class="row" style="text-align: center">
                 <a href="<?php echo base_url(); ?>CtrlTchat/Tchat/<?php echo $id ?>" type="button" class="btn btn-default btn-sm">
                     <img width="24" height="24" src="<?php echo (base_url());?>images/chat1600.png"> TChat
@@ -264,7 +264,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             <div class="clearfix"></div>
 
+            <?php if($id != 3 ) {?>
 			<input type="button" value="Valider" class="btn valider" onclick="trajetMatch()/>
+            <?php }?>
         </div>
     </div>
 </div>
@@ -285,7 +287,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--/contact-->
 
-<<<<<<< HEAD
 
 <!-- footer -->
 
@@ -294,9 +295,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-=======
-
->>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
 <!--//main content start-->
 <!--start-smooth-scrolling-->
 <script type="text/javascript">

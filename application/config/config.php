@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = "http://192.168.1.14:8080/Com2You/";
+$config['base_url'] = "http://localhost/Com2You/";
 
 /*
 |--------------------------------------------------------------------------
