@@ -8,6 +8,7 @@ class CtrlProfil extends CI_Controller {
         //$this->load->model('Model_Profil');
 //       // $data['monprofil'] = $this->Model_profil->getProfil();
        //$data['monprofil'] = $this->Model_Profil->getProfil();
+<<<<<<< HEAD
 //        $data['monprofil']= array(
 //            'nom' => 'Hervé P',
 //            'communication' => 'Communication Digitale',
@@ -31,16 +32,14 @@ class CtrlProfil extends CI_Controller {
         $data['id'] = $_SESSION['id'];
 
 
+=======
+        $data['monprofil']= array(
+            'nom' => 'Hervé P',
+            'communication' => 'Communication Digitale',
+            'nbcroise' => '12',
+            'description' => 'Ceci est ma description/biographie'
+        );
+>>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
         $this->load->view('profil',$data);
-    }
-    public function AjouterFavouri(){
-        die("okk");
-        $description = $this->input->post('description');
-        $this->load->model('Model_profil');
-        return $this->Model_profil->saveFavouri($description);
-
-
-
-
     }
 }

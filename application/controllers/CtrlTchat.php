@@ -2,15 +2,20 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class CtrlTchat extends CI_Controller {
-	public function Tchat($receiverId )
+	public function Tchat($senderId)
 	{
+		
+		// Claire => 4
+	      $_SESSION['com2youuserid'] = 4;
+		// Guillaume = 5
+		$receiverId = 4;
 		//$receiverId = $_SESSION['com2youuserid'];
 		
 		$_SESSION['receiverId'] = $receiverId;
 		
 		$this->load->model('Model_Tchat');
 		$data["Titre"] = "Mes messages";
-		$data["MesMessages"] = $this->Model_Tchat->getMessages($receiverId);
+		$data["MesMessages"] = $this->Model_Tchat->getMessages($receiverId, $senderId);
 		$this->load->view('Tchat',$data);
 	}
 	
@@ -28,12 +33,14 @@ class CtrlTchat extends CI_Controller {
 	
 	public function SendMessage($message )
 	{
-		$receiverId = 4;
+		$receiverId =5;
 		$senderId=4;
 		
 		$this->load->model('Model_Tchat');
-		$data["NewMessages"] = $this->Model_Tchat->saveMessage($receiverId, $senderId, $message );
-		return json_encode($data);
+		$data= $this->Model_Tchat->saveMessage($receiverId, $senderId, $message );
+		
+		
+		echo json_encode($data);
 		
 		
 		

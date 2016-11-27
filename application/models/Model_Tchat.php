@@ -2,8 +2,8 @@
 
 class Model_Tchat extends CI_Model{
 
-    public function getMessages( $receiverId){
-    	$sql = $this->db->query('SELECT  `ID`,`ID_SENDER`,`ID_RECEIVER`,`CONTENT`,`DATETIME` FROM `message` WHERE  ID_RECEIVER = '. $receiverId.' OR ID_SENDER ='. $receiverId );
+    public function getMessages( $receiverId, $senderId) {
+    	$sql = $this->db->query('SELECT  `ID`,`ID_SENDER`,`ID_RECEIVER`,`CONTENT`,`DATETIME` FROM `message` WHERE  ID_RECEIVER = '. $receiverId.' OR ID_SENDER ='. $senderId );
     
       foreach($sql->result() as $row){
             $data[] = $row;
@@ -30,7 +30,17 @@ class Model_Tchat extends CI_Model{
         $sql = $this->db->query($query);
       
     	
-        return $this->getMessages( $receiverId);
+      //   return $this->getMessages( $receiverId);
+      
+      $sql = $this->db->query('SELECT  `ID`,`ID_SENDER`,`ID_RECEIVER`,`CONTENT`,`DATETIME` FROM `message` WHERE  ID_RECEIVER = '. $receiverId.' OR ID_SENDER ='. $receiverId );
+    
+      foreach($sql->result() as $row){
+            $data[] = $row;
+        }
+        if(!isset($data)){
+				$data[] = array();
+		}
+        return $data;
 
     }
 }

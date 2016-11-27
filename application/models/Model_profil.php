@@ -6,11 +6,19 @@
  * Time: 01:55
  */
 
-class Model_profil extends CI_Model{
+class Model_Profil extends CI_Model{
 
+<<<<<<< HEAD
     public function getUser($id){
+=======
+    public function getProfil(){
+>>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
 
+//        $sql = $this->db->query('
+//        select * from x
+//        ');
 //
+<<<<<<< HEAD
 
 		$sql = $this->db->query('select * from user u INNER JOIN comtwouser c where u.COMTWOUSERID = c.id and u.id ='.$id);
 		foreach($sql->result() as $row){
@@ -62,10 +70,29 @@ class Model_profil extends CI_Model{
 
 //        var_dump($data);
 //        die();
+=======
+//        foreach($sql->result() as $row){
+//            $data[] = $row;
+//        }
+//        return $data;
+
+//        $data[]= array(
+//            'nom' => 'Hervé P',
+//            'communication' => 'Communication Digitale',
+//            'nbcroise' => '12',
+//            'description' => 'Ceci est ma description/biographie'
+//        );
+
+		$sql = $this->db->query('select * from user');
+		foreach($sql->result() as $row){
+            $data[] = $row;
+        }
+>>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
         return $data;
 
 
     }
+<<<<<<< HEAD
 
     public function getHave(){
         $sql = $this->db->query('select DISTINCT s.* from skill s INNER JOIN have d where d.COMTWOUSERID = 4 and d.SKILLID = s.id');
@@ -126,4 +153,6 @@ class Model_profil extends CI_Model{
     public function getActivityDomain(){
         return null;
     }
+=======
+>>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
 }

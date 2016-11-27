@@ -4,12 +4,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class CtrlTrajet extends CI_Controller {
     public function trajet()
     {
-
         //$this->load->model('Model_trajet');
         //$data['montrajet'] = $this->Model_trajet->getProfil();
-
         return($this->load->view('trajet'));
     }
+<<<<<<< HEAD
 
     public function creattrajet()
     {
@@ -45,4 +44,6 @@ class CtrlTrajet extends CI_Controller {
         return($this->load->view('Tchat'));
     }
 
+=======
+>>>>>>> 5441088bacbcd1d6f7bd8b7cb31a2565b1da58ac
 }

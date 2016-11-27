@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 body {
 	margin:0;
 	font-family: 'Roboto', sans-serif;
-	background: #fff;
+	background: #4aaead;
 }
 body a{
 	transition: 0.5s all ease;
@@ -65,7 +65,7 @@ span.glyphicon.glyphicon-earphone {
 	color:#fff;
 }
 span.glyphicon.glyphicon-earphone:hover{
-	color:#ff9900;
+	color:e34e00;
 }
 .social-icons ul li {
     display: inline-block;
@@ -123,7 +123,7 @@ a i.dribble:hover {
  text-decoration:none;
 }
 .logo  a h1 span{
-      color:#ff9900;
+      color:#e34e00;
 }
 p.top-para {
     text-align: right;
@@ -159,7 +159,7 @@ display: inline-block;
 .link-effect-12 a span::before {
   width: 100%;
   height:2px;
-  background:#ff9900;
+  background:#e34e00;
   content: "";
   position: absolute;
   left: 0;
@@ -176,7 +176,7 @@ display: inline-block;
 .link-effect-12 a span::after {
   width: 100%;
   height:2px;
-  background:#ff9900;
+  background:#e34e00;
   content: "";
   position: absolute;
   right: 0;
@@ -194,7 +194,7 @@ display: inline-block;
 .link-effect-12 a::before {
   width:2px;
   height: 100%;
-  background:#ff9900;
+  background:#e34e00;
   content: "";
   position: absolute;
   left: 0;
@@ -212,7 +212,7 @@ display: inline-block;
 .link-effect-12 a::after {
   width:2px;
   height: 100%;
-  background:#ff9900;
+  background:#e34e00;
   content: "";
   position: absolute;
   right: 0px;
@@ -228,7 +228,7 @@ display: inline-block;
   transition: 0.1s 0.1s;
 }
 .link-effect-12 a:hover {
-  color:#ff9900;
+  color:#e34e00;
 }
 .link-effect-12 a:hover::before, .link-effect-12 a:hover::after {
   -moz-transform: translateX(0);
@@ -243,7 +243,7 @@ display: inline-block;
   transform: translateX(0);
 }
 .link-effect-12 a.active {
-  color:#ff9900;
+  color:#e34e00;
 }
 /*-- //link-effect-14 --*/
 /*--/w3layouts--*/
@@ -686,7 +686,7 @@ ul.f-icons li a.isto:hover{
     color: #fff;
 }
 .banner-info p {
-   color: #ff9900;
+   color: #e34e00;
     font-weight: 700;
     font-size: 40px;
     padding: 3px 30px;
@@ -715,8 +715,8 @@ ul.f-icons li a.isto:hover{
   background:#fff;
 }
 .callbacks_here a:after{
-	border:2px solid #ff9900;
-  	background:#ff9900;
+	border:2px solid #e34e00;
+  	background:#e34e00;
 }
 ul.callbacks_tabs.callbacks2_tabs {
 	top: 114%;
@@ -824,13 +824,13 @@ a.hvr-shutter-in-horizontal:hover:before, a.hvr-shutter-in-horizontal:focus:befo
     font-weight: 600;
 }
 #about {
-        background: #ff9900;
+        background: #e34e00;
 }
 /*----*/
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
 	 font-size:1.1em;
-	 color:#ff9900;
+	 color:#e34e00;
 	 top:-2em;
 	 -webkit-transition: all 0.125s ease;
 	 transition: all 0.125s ease;
@@ -874,7 +874,7 @@ input ~ span,
   display: block;
   width: 0;
   height:2px;
-  background:#ff9900;
+  background:#e34e00;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -915,7 +915,7 @@ textarea {
 	padding: 0.8em 1em;
 }
 .send input[type="submit"]:hover {
-   background:#ff9900;
+   background:#e34e00;
 }
 /*--//about--*/
 /*--services--*/
@@ -1056,7 +1056,7 @@ h3.tittle{
 h5.sub-h{
     font-size: 1.2em;
   font-weight: 400;
-  color:#ff9900;
+  color:#e34e00;
   text-align: center;
   margin:0.8em 0;
   }
@@ -1074,7 +1074,7 @@ h5.sub-h{
     text-transform: uppercase;
 }
 span.event-date{
-  font-size: 1.3em;color:#ff9900;
+  font-size: 1.3em;color:#e34e00;
   font-weight: 600;
   line-height:1.5em;
   text-transform: uppercase;
@@ -1096,8 +1096,8 @@ span.event-year {
 	-o-border-radius: 50%;
 	-ms0-border-radius: 50%;
     width: 100%;
-    border-bottom:5px solid #ff9900;
-    border-left: 5px solid #ff9900;
+    border-bottom:5px solid #e34e00;
+    border-left: 5px solid #e34e00;
 }
 .news-grid:hover .news-img img{
 	 border-bottom:5px solid #146eb4;
@@ -1143,7 +1143,7 @@ span.event-year {
 .test-gr h4{
 	font-size: 1.2em;
     font-weight: 600;
-    color:#ff9900;
+    color:#e34e00;
     text-transform: uppercase;
 }
 .test-gr span{
@@ -1182,7 +1182,7 @@ ul.insure {
 #plan  h4 {
    font-size:2em;
   font-weight: 600;
-  color: #ff9900;
+  color: #e34e00;
   text-transform: uppercase;
   margin: 1em 0 0.3em 0;
 }
@@ -1309,7 +1309,7 @@ figure.effect-julia h4 {
     position: relative;
     padding: 0.5em 0;
     font-size:2.5em;
-	    color: #ff9900!important;
+	    color: #e34e00!important;
 }
 figure.effect-julia span{
       color: #fff;
@@ -1414,9 +1414,9 @@ figure.effect-julia:hover p {
     font-size: 1.1em;
     margin: 1em 0 0 0;
     -webkit-appearance: none;
-    background: #ff9900;
+    background: #e34e00;
     transition: 0.5s all;
-    border: 2px solid #ff9900;
+    border: 2px solid #e34e00;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -1522,7 +1522,7 @@ h3.tittle.second,h5.sub-h.second {
 	text-decoration:none;
 }
 .footer-grid-left ul li a i,.footer-grid-left ul li a.cols{
-	color: #ff9900;
+	color: #e34e00;
 	font-style:normal;
 }
 .footer-grid-left ul li a:hover{
@@ -1561,7 +1561,7 @@ h3.tittle.second,h5.sub-h.second {
 	text-transform:uppercase;
 }
 .footer-grid-left input[type="submit"]:hover{
-	background: #ff9900;
+	background: #e34e00;
 }
 .footer-grid-left p{
 	    font-size: 0.9em;
@@ -1587,7 +1587,7 @@ h3.tittle.second,h5.sub-h.second {
     margin: 0.5em 0 0;
 }
 .footer-bottom-left p a{
-	color:#ff9900;
+	color:#e34e00;
 	text-decoration:none;
 	font-weight:400;
 }
@@ -2151,9 +2151,9 @@ ul.social-icons2{
 		font-size: 1.1em;
 		margin: 1em 0 0 0;
 		-webkit-appearance: none;
-		background: #ff9900;
+		background: #e34e00;
 		transition: 0.5s all;
-		border: 2px solid #ff9900;
+		border: 2px solid #e34e00;
 		-webkit-transition: 0.5s all;
 		transition: 0.5s all;
 		-moz-transition: 0.5s all;

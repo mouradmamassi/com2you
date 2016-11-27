@@ -4,13 +4,13 @@ class Model_User extends CI_Model
 	public function getAuthen($login,$mdp)
 	{
 		
-		$sql = $this->db->query('
-		SELECT COMTWOUSERID 
-		FROM user 
-		WHERE LOGIN = '+$login+' 
-		and PASSWORD = '+$mdp);
-		$data = $sql->result();
-		return ($data);
+		$this->db->select('*');
+		$this->db->from('User');
+		$this->db->where('LOGIN', $login);
+		$this->db->where('PASSWORD', $mdp);
+		$query = $this->db->get();
+		$res = $query->result();
+		return ($res);
 
 	}
 }
