@@ -69,26 +69,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             $( "#datepicker" ).datepicker();
         } );
     </script>
-
-    <script type="text/javascript">
-
-//        function createtrajet(){
-//
-//            ajaxRequest= $.ajax({
-//                url: "<?php //echo base_url()?>//index.php/CtrlTrajet/creattrajet",
-//                type: "post",
-//                data: 'test'
-//            });
-//
-//            /*  request cab be abort by ajaxRequest.abort() */
-//
-//            ajaxRequest.done(function (response, textStatus, jqXHR){
-//                // show successfully for submit message
-//                alert("ok");
-//
-//            });
-//        }
-    </script>
     <!--//end-smoth-scrolling-->
 </head>
 <body>
@@ -189,36 +169,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <!--        <span style="border-radius: 50%;"></span>-->
     </div>
-
-
-<!--    <label for="title">Title</label>-->
-<!--    <input type="input" name="title" /><br />-->
-<!---->
-<!--    <label for="text">Text</label>-->
-<!--    <textarea name="text"></textarea><br />-->
-<!---->
-<!--    <input type="submit" name="submit" value="Create news item" />-->
-
-
-<form method="post" action="<?php echo base_url()?>index.php/CtrlTrajet/creattrajet">
     <div class="row">
         <div class="col-md-6">
-            Ville de depart<select class="form-control" style="margin-bottom: 2rem" name="villedepart">
-                <option>Dijon</option>
-                <option>Belfort</option>
-                <option>Paris</option>
-                <option>Le Havre</option>
-                <option>Rouen</option>
+            ville de depart<select class="form-control" style="margin-bottom: 2rem">
+                <option>ville 1</option>
+                <option>ville 2</option>
+                <option>ville 3</option>
+                <option>ville 4</option>
+                <option>ville 5</option>
             </select>
         </div>
 
         <div class="col-md-6">
-            Gare de depart <select class="form-control" name="garedepart">
-                <option>Dijon Ville</option>
-                <option>Belfort-montbéliard</option>
-                <option>Pais Gare de Lyon</option>
-                <option>Paris Bercy</option>
-                <option>le Havre</option>
+            Gare de depart <select class="form-control">
+                <option>A1</option>
+                <option>A2</option>
+                <option>A3</option>
+                <option>A4</option>
+                <option>A5</option>
             </select>
         </div>
 
@@ -228,22 +196,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <div class="row">
         <div class="col-md-6">
-            Ville d'arrivée <select class="form-control" style="margin-bottom: 2rem" name="villearrive">
-                <option>Paris</option>
-                <option>Toulouse</option>
-                <option>Lille</option>
-                <option>Bordeaux</option>
-                <option>Montpellier</option>
+            ville d'arrivée <select class="form-control" style="margin-bottom: 2rem">
+                <option>ville 1</option>
+                <option>ville 2</option>
+                <option>ville 3</option>
+                <option>ville 4</option>
+                <option>ville 5</option>
             </select>
         </div>
 
         <div class="col-md-6">
-            Gare d'arrivée <select class="form-control" name="garearrive">
-                <option>Paris Gare de Lyon</option>
-                <option>Paris Bercy</option>
-                <option>TOULOUSE MATABIAU</option>
-                <option>LYON PART DIEU</option>
-                <option>MONTPELLIER SAINT ROCH</option>
+            Gare d'arrivée <select class="form-control">
+                <option>A1</option>
+                <option>A2</option>
+                <option>A3</option>
+                <option>A4</option>
+                <option>A5</option>
             </select>
         </div>
 
@@ -251,22 +219,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 
 
-    A partir de <select class="form-control" style="margin-top: 2em" name="hour">
-        <option>05h29</option>
-        <option>07h02</option>
-        <option>07h25</option>
-        <option>07h30</option>
-        <option>08h25</option>
+    A partir de <select class="form-control" style="margin-top: 2em">
+        <option>H1</option>
+        <option>H2</option>
+        <option>H3</option>
+        <option>H4</option>
+        <option>H5</option>
     </select>
 
 
 
-    Liste des trains<select class="form-control" style="margin-top: 2em" name="nbtrain">
-        <option>17750</option>
-        <option>6700</option>
-        <option>6744</option>
-        <option>17754</option>
-        <option>9260</option>
+    Liste des trains<select class="form-control" style="margin-top: 2em">
+        <option>N1</option>
+        <option>N2</option>
+        <option>N3</option>
+        <option>N4</option>
+        <option>N5</option>
     </select>
 <!--    <div class="row" style="margin-top: 2em">-->
 
@@ -282,7 +250,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             </a>
             <div id="collapse1" class="panel-collapse collapse in">
-                date <input type="text" class="form-control" placeholder="Text input" name="date" id="datepicker">
+                date <input type="text" class="form-control" placeholder="Text input" id="datepicker">
             </div>
         </div>
         <div class="panel panel-default">
@@ -300,25 +268,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--                    commodo consequat.</div>-->
                 <div class="row" style="margin-top: 2em">
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2" >
-                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Lundi" data-off="<i class='fa fa-pause'></i>Lundi" name="lundi" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Lundi" data-off="<i class='fa fa-pause'></i>Lundi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mardi" data-off="<i class='fa fa-pause'></i>Mardi" name="mardi" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mardi" data-off="<i class='fa fa-pause'></i>Mardi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input  data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mecredi" data-off="<i class='fa fa-pause'></i>Mecredi" name="mercredi" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Mecredi" data-off="<i class='fa fa-pause'></i>Mecredi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Jeudi" data-off="<i class='fa fa-pause'></i>Jeudi" name="jeudi" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Jeudi" data-off="<i class='fa fa-pause'></i>Jeudi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Vendredi" data-off="<i class='fa fa-pause'></i>Vendredi" name="vendredi" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Vendredi" data-off="<i class='fa fa-pause'></i>Vendredi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Samedi" data-off="<i class='fa fa-pause'></i>Samedi" name="samedi" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Samedi" data-off="<i class='fa fa-pause'></i>Samedi" type="checkbox">
                     </div>
                     <div class="checkbox col-md-3 col-sm-2 col-sx-2">
-                        <input data-toggle="toggle" data-on="<i class='fa fa-play'></i> Dimanche" data-off="<i class='fa fa-pause'></i>Dimanche" name="dimanche" type="checkbox">
+                        <input checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Dimanche" data-off="<i class='fa fa-pause'></i>Dimanche" type="checkbox">
                     </div>
                 </div>
             </div>
@@ -329,14 +297,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
         <input class="btn btn-success" type="submit" value="Ajouter">
-
-</form>
-    <div style="margin-bottom: 2em"></div>
 <!--        <input type="text" class="form-control" placeholder="Text input" style="margin-top: 2rem">-->
 <!--    </div>-->
 </div>
 <div class="clearfix"></div>
 <!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-4 footer-grid-left">
+                <h3>twitter feed</h3>
+                <ul>
+                    <li><a href="single.html">It is a long established fact that a reader will
+                            be distracted by the readable content of a page when looking at
+                            its layout.</a><span>15 minutes ago</span></li>
+                    <li><a href="mailto:info@example.com" class="cols">@NASA</a> & <a href="mailto:info@example.com" class="cols">
+                            @orbital science</a> <a href="single.html">readable content of a page when looking at
+                            its layout</a><span>45 minutes ago</span></li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-grid-left">
+                <h3>Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" value="enter your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter your email address';}" required="">
+                    <input type="submit" value="Submit" >
+                </form>
+            </div>
+            <div class="col-md-4 footer-grid-left">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+						<span>But I must explain to you how all this mistaken idea of denouncing
+						pleasure and praising pain was born and I will give you a complete
+						account of the system, and expound the actual teachings of the
+						great explorer.</span>
+                </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>&copy 2016 We Plan. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts.</a></p>
+            </div>
+            <div class="footer-bottom-right">
+                <ul class="social-icons2">
+                    <li><a href="#"> </a></li>
+                    <li><a href="#" class="fb"> </a></li>
+                    <li><a href="#" class="in"> </a></li>
+                    <li><a href="#" class="dott"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
 <!-- //footer -->
 <!--//main content start-->
 <!--start-smooth-scrolling-->
@@ -359,10 +374,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $('select').select2();
 
 </script>
-
-
-
-
 <!--end-smooth-scrolling-->
 <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- //for bootstrap working -->

@@ -91,18 +91,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <div class="header-top">
         <div class="container">
-            <div class="logo"><a href="index.html"><h1>Com2<span>You</span></h1>
+            <div class="logo"><a href="index.html"><h1>We <span>Plan</span></h1>
                     <p class="top-para">Plan for the Future</p></a></div>
             <div class="main-nav">
                 <span class="menu"></span>
                 <div class="top-menu">
                     <ul class="link-effect-12" id="link-effect-12">
-                        <li class="active"><a href="index.html"><span>Mon profil</span></a></li>
-                        <li><a href="#about" class="scroll"><span>Mes affinités</span></a></li>
-                        <li><a href="#service" class="scroll"><span>Ajouter un trajet</span></a></li>
-                        <li><a href="#gallery" class="scroll"><span>Discussion</span></a></li>
-                        <li><a href="#news" class="scroll"><span>Réglages</span></a></li>
-                        <li><a href="#contact" class="scroll"><span>Se déconnecter</span></a></li>
+                        <li class="active"><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="#about" class="scroll"><span>About</span></a></li>
+                        <li><a href="#service" class="scroll"><span>Services</span></a></li>
+                        <li><a href="#gallery" class="scroll"><span>Gallery</span></a></li>
+                        <li><a href="#news" class="scroll"><span>News & Events</span></a></li>
+                        <li><a href="#contact" class="scroll"><span>Contact</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -119,6 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="clearfix"></div>
         </div>
         <!--start-banner-->
+
     </div>
 </div>
 <!--//end-banner-->
@@ -152,63 +153,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="row">
 
                     <div class="col-md-2 col-md-offset-2  col-sm-4 col-sm-offset-1  col-xs-4 col-xs-offset-1" style="margin-top: -10px; margin-bottom: 3rem">
-                        <img src="<?php echo (base_url()); ?>images/Photo de profil.png" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
+                        <img src="<?php echo (base_url()); ?>images/g8.jpg" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
                     </div>
                     <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-3">
-                        <h4> <?php  echo $user[0]->LASTNAME; ?></h4>
-                        <p><?php  echo $user[0]->DESCRIPTION ?></p>
-<!--                        <p>Croisé --><?php // echo $monprofil['nbcroise'] ?><!-- fois</p>-->
+                        <h4> <?php  echo $monprofil['nom'] ?></h4>
+                        <p><?php  echo $monprofil['communication'] ?></p>
+                        <p>Croisé <?php  echo $monprofil['nbcroise'] ?> fois</p>
                     </div>
 
                     <div class="col-md-2 col-sm-3  col-xs-2 ">
-                        <a href="<?php echo base_url(); ?>CtrlTchat/Tchat/4" type="button" class="btn btn-default btn-sm">
-                            <img width="24" height="24" src="<?php echo (base_url());?>images/chat1600.png"> TChat
-                        </a>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span> Edit
+                        </button>
                     </div>
 
                     <div class="clearfix"></div>
             </div>
-<!--            <div class="row">-->
-<!--                <div class="col-md-9 col-md-offset-3 " style="top:1rem">-->
-<!--                    <p>--><?php // echo $user[0]->DESCRIPTION ?><!--</p>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="row">
+                <div class="col-md-9 col-md-offset-3 " style="top:1rem">
+                    <p><?php  echo $monprofil['description'] ?> ....</p>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-9 col-md-offset-2 " style="top:2rem">
                     <ul class="list-group">
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'aime - <?php foreach($favouri as $fav) echo $fav->DESCRIPTION.' '; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai visité -  <?php foreach($visited as $vis) echo $vis->COUNTRY.'|'; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je veux visiter - <?php foreach($visit as $vis) echo $vis->COUNTRY.'|'; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai besion de - <?php foreach($visit as $vis) echo $vis->COUNTRY.'|'; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je sais - <?php foreach($skill as $sk) echo $sk->DESCRIPTION.'|'; ?></li>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'aime - le dessin, la danse classique <span class="glyphicon glyphicon-plus " style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai visité - Suisse, Chine <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je veux visiter - Corée du Nord <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai besion de - apprendre l'espagnol <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
+                        <a class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je sais - tricoter <span class="glyphicon glyphicon-plus" style="float: right; color: #146eb4"></span></a>
                     </ul>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Ajouter Favori</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form method="post">
-                                <div class="form-group">
-                                    <label for="exampleInput">Description</label>
-                                    <input type="text" class="form-control" id="exampleInput" name="description" placeholder="Email">
-                                </div>
-                                <button type="submit" class="btn btn-default" onclick="ValiderFormFavouri()">Ajouter</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                            </form>
-                        </div>
-<!--                        <div class="modal-footer">-->
-<!---->
-<!--                            <button type="button" class="btn btn-primary">Ajouter</button>-->
-<!--                        </div>-->
-                    </div>
                 </div>
             </div>
 
@@ -252,14 +227,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--/contact-->
 
-<<<<<<< HEAD
-<!-- footer -->
 
-
-<!-- //footer -->
-=======
-
->>>>>>> d87d14041da770111194ed26e3f44d4639072c82
 <!--//main content start-->
 <!--start-smooth-scrolling-->
 <script type="text/javascript">
@@ -276,24 +244,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $().UItoTop({ easingType: 'easeOutQuart' });
 
     });
-
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').focus()
-    })
-
-    function ValiderFormFavouri(){
-        alert('ok');
-        var description = $('#exampleInput');
-        $.ajax({
-//            data : [ 'description' =>description],
-            url : "<?php  echo site_url('CtrlProfil/AjouterFavouri'); ?>",
-                success:function({
-
-            })
-        })
-
-
-    }
 </script>
 <!--end-smooth-scrolling-->
 <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
