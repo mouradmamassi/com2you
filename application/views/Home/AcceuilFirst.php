@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        <hgroup>
 	            <img src="<?php echo(base_url()); ?>images/g3.jpg"/>
 	        </hgroup>
-	        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+	        
 	      </div>
 	    </div>
 	    <div class="item slides">
@@ -104,7 +104,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        <hgroup>
 	            <img src="<?php echo(base_url()); ?>images/g3.jpg"/>
 	        </hgroup>       
-	        <button class="btn btn-hero btn-lg" role="button">See all features</button>
 	      </div>
 	    </div>
 	    <div class="item slides">
@@ -113,7 +112,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        <hgroup>
 	            <img src="<?php echo(base_url()); ?>images/g3.jpg"/>
 	        </hgroup>
-	        <button class="btn btn-hero btn-lg" role="button">See all features</button>
 	      </div>
 	    </div>
 	  </div> 

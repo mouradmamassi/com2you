@@ -14,7 +14,7 @@
 		<script type="text/javascript">
 			function goToValideLogin()
 			{
-				window.location.href = "<?php echo site_url('CtrlTrajet/trajet');?>";
+				window.location.assign("http://localhost:8080/Com2You/index.php/CtrlMatchVoyageur/index");
 			}
 		</script>
 	</head>

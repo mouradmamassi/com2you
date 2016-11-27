@@ -45,10 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--animate-->
     <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo (base_url());?>Content/app.css" rel="stylesheet" type="text/css" media="all">
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+
     <!--//end-animate-->
     <!-- start-smoth-scrolling-->
     <script type="text/javascript">
@@ -68,6 +65,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $( function() {
             $( "#datepicker" ).datepicker();
         } );
+        
+        function addTravel()
+        {
+			window.location.assign("http://localhost:8080/Com2You/index.php/CtrlMatchVoyageur/index");
+		}
     </script>
     <!--//end-smoth-scrolling-->
 </head>
@@ -80,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--start-header-->
     <div class="header-strip">
         <div class="container">
-            <p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> CALL - US - FREE: &nbsp;888 - 585 - 9858</p>
+            <p class="phonenum"><span class="glyphicon glyphicon-earphone"></span> CALL - US - FREE: &nbsp;888 - 585 - 9858</p>
             <div class="social-icons">
                 <ul>
                     <li><a href="#"><i class="facebook"> </i></a></li>
@@ -296,63 +298,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-        <input class="btn btn-success" type="submit" value="Ajouter">
+        <input class="btn btn-success" type="button" value="Ajouter" onclick="addTravel">
 <!--        <input type="text" class="form-control" placeholder="Text input" style="margin-top: 2rem">-->
 <!--    </div>-->
 </div>
 <div class="clearfix"></div>
-<!-- footer -->
-<div class="footer">
-    <div class="container">
-        <div class="footer-grids">
-            <div class="col-md-4 footer-grid-left">
-                <h3>twitter feed</h3>
-                <ul>
-                    <li><a href="single.html">It is a long established fact that a reader will
-                            be distracted by the readable content of a page when looking at
-                            its layout.</a><span>15 minutes ago</span></li>
-                    <li><a href="mailto:info@example.com" class="cols">@NASA</a> & <a href="mailto:info@example.com" class="cols">
-                            @orbital science</a> <a href="single.html">readable content of a page when looking at
-                            its layout</a><span>45 minutes ago</span></li>
-                </ul>
-            </div>
-            <div class="col-md-4 footer-grid-left">
-                <h3>Newsletter</h3>
-                <form action="#" method="post">
-                    <input type="email" value="enter your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter your email address';}" required="">
-                    <input type="submit" value="Submit" >
-                </form>
-            </div>
-            <div class="col-md-4 footer-grid-left">
-                <h3>about us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-						<span>But I must explain to you how all this mistaken idea of denouncing
-						pleasure and praising pain was born and I will give you a complete
-						account of the system, and expound the actual teachings of the
-						great explorer.</span>
-                </p>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-bottom-left">
-                <p>&copy 2016 We Plan. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts.</a></p>
-            </div>
-            <div class="footer-bottom-right">
-                <ul class="social-icons2">
-                    <li><a href="#"> </a></li>
-                    <li><a href="#" class="fb"> </a></li>
-                    <li><a href="#" class="in"> </a></li>
-                    <li><a href="#" class="dott"> </a></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!-- //footer -->
+
 <!--//main content start-->
 <!--start-smooth-scrolling-->
 <script type="text/javascript">
