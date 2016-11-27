@@ -18,4 +18,16 @@ class Model_Trajet extends CI_Model{
         }
         return $data;
     }
+
+//    public function saveTrajet( $data ){
+//
+//        $query = " INSERT INTO city(`NAME`) ";
+//        $query .= " VALUES ( " .$data['villedepart']."')";
+//
+//        $sql = $this->db->query($query);
+//
+//
+//        return $this->getMessages( $receiverId);
+//
+//    }
 }

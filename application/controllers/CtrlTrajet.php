@@ -39,8 +39,8 @@ class CtrlTrajet extends CI_Controller {
         );
         var_dump($jours);
         die('ok');
-        //$this->load->model('Model_trajet');
-        //$data['montrajet'] = $this->Model_trajet->getProfil();
+        $this->load->model('Model_Trajet');
+        $data['montrajet'] = $this->Model_trajet->getProfil();
 
         return($this->load->view('Tchat'));
     }

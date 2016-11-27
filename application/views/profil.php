@@ -13,6 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="<?php echo(base_url());?>Content/site.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>We Plan a Society & People Category Flat Bootstrap Responsive website Template | Home :: w3layouts</title>
     <!--mobile apps-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,21 +152,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="news-grids">
             <div class="row">
 
-                    <div class="col-md-2 col-md-offset-2  col-sm-4 col-sm-offset-1  col-xs-4 col-xs-offset-1" style="margin-top: -10px; margin-bottom: 3rem">
+                    <div class="col-md-2 col-md-offset-2  col-sm-4 col-sm-offset-1  col-xs-9 col-xs-offset-2" style="margin-top: -10px; margin-bottom: 3rem">
+                        <?php if( $id == 2 ){ ?>
                         <img src="<?php echo (base_url()); ?>images/Photo de profil.png" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
+                        <?php } else {?>
+                        <img src="<?php echo (base_url()); ?>images/Profil de Guillaume.jpg" title="couple"  style="border-radius: 50% ; width: 70%;height: 70%"/>
+                        <?php } ?>
+
                     </div>
-                    <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-3">
-                        <h4> <?php  echo $user[0]->LASTNAME; ?></h4>
+                    <div class="col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-12">
+                        <h4 style="text-align: center"> <?php  echo $user[0]->FIRSTNAME .' '.substr($user[0]->LASTNAME, 0, 1);  ; ?></h4>
                         <p><?php  echo $user[0]->DESCRIPTION ?></p>
 <!--                        <p>Croisé --><?php // echo $monprofil['nbcroise'] ?><!-- fois</p>-->
                     </div>
-
-                    <div class="col-md-2 col-sm-3  col-xs-2 ">
-                        <a href="<?php echo base_url(); ?>CtrlTchat/Tchat/4" type="button" class="btn btn-default btn-sm">
-                            <img width="24" height="24" src="<?php echo (base_url());?>images/chat1600.png"> TChat
-                        </a>
-                    </div>
-
                     <div class="clearfix"></div>
             </div>
 <!--            <div class="row">-->
@@ -177,11 +176,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="row">
                 <div class="col-md-9 col-md-offset-2 " style="top:2rem">
                     <ul class="list-group">
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'aime - <?php foreach($favouri as $fav) echo $fav->DESCRIPTION.' '; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai visité -  <?php foreach($visited as $vis) echo $vis->COUNTRY.'|'; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je veux visiter - <?php foreach($visit as $vis) echo $vis->COUNTRY.'|'; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">J'ai besion de - <?php foreach($visit as $vis) echo $vis->COUNTRY.'|'; ?></li>
-                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'">Je sais - <?php foreach($skill as $sk) echo $sk->DESCRIPTION.'|'; ?></li>
+                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>J'aime</b> - <?php foreach($favouri as $fav) echo $fav->DESCRIPTION.' '; ?></li>
+                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>J'ai visité</b> -  <?php foreach($visited as $vis) echo $vis->COUNTRY.', '; ?></li>
+                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>Je veux visiter</b> - <?php foreach($visit as $vis) echo $vis->COUNTRY.', '; ?></li>
+                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>J'ai besoin de</b> - <?php foreach($skillhave as $skillh) echo $skillh->DESCRIPTION.', '; ?></li>
+                        <li class="list-group-item" href="#" style="font-size: 12px; font-family: 'Noto Sans CJK JP Black'"><b>Je sais</b> - <?php foreach($skill as $sk) echo $sk->DESCRIPTION.', '; ?></li>
                     </ul>
                 </div>
             </div>
@@ -213,20 +212,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
 
             <hr>
-            <div class="row col-md-offset-3 col-sm-offset-3 col-sx-offset-3">
-                <h5 style="margin-bottom: 2rem; margin-left: 1rem">Lier un Compte</h5>
+            <?php if($id != $user[0]->ID ) {?>
+            <div class="row" style="text-align: center">
+                <a href="<?php echo base_url(); ?>CtrlTchat/Tchat/<?php echo $id ?>" type="button" class="btn btn-default btn-sm">
+                    <img width="24" height="24" src="<?php echo (base_url());?>images/chat1600.png"> TChat
+                </a>
             </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-5 col-xs-offset-1 col-md-offset-4 col-sm-offset-4 ">
-                    <a href="#"><span class="glyphicon glyphicon-plus-sign" style="font-size: 50px"></span></a>
-                    <p>Deezer / Spotify </p>
+            <?php } ?>
+            <br>
+            <div class="row" >
+                <div class="col-md-1 col-md-offset-4 col-sm-1 col-sm-offset-4 col-xs-3 ">
+                    <a href="#">
+                        <img src="<?php echo base_url(); ?>images/1480263639_44.svg">
+                    </a>
                 </div>
-                <div class="col-md-2 col-sm-2  col-xs-6">
-                    <a href="#"><span class="glyphicon glyphicon-plus-sign"  style="font-size: 50px"></span></a>
-                    <p>LinkedIn </p>
+                <div class="col-md-1 col-sm-1 col-xs-3 ">
+                    <a href="#">
+                        <img  src="<?php echo base_url(); ?>images/1480263644_43.svg">
+                    </a>
                 </div>
 
+                <div class="col-md-1 col-sm-1 col-xs-3 ">
+                    <a href="#">
+                        <img src="<?php echo base_url(); ?>images/1480263647_10.svg">
+                    </a>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-3 ">
+                    <a href="#">
+                        <img  src="<?php echo base_url(); ?>images/1480263634_35.svg">
+                    </a>
+                </div>
             </div>
+
+
+<!--                <div class="col-md-1 col-sm-1 col-xs-1 ">-->
+<!--                    <a href="#"><i class="fa fa-whatsapp" style="font-size:48px;"></i></a>-->
+<!--                </div>-->
+<!--                <div class="col-md-1 col-sm-1 col-xs-1 ">-->
+<!--                    <a href="#"><i class="fa fa-instagram" style="font-size:48px;"></i></a>-->
+<!--                </div>-->
+
+
+
+
+
+
+
+
 
 
             <div class="clearfix"></div>
@@ -235,7 +267,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
 </div>
-<!--start-gallery-->
+
 
 <link rel="stylesheet" href="css/swipebox.css">
 <script src="<?php echo(base_url()); ?>/Scripts/jquery.swipebox.min.js"></script>
@@ -252,14 +284,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--/contact-->
 
-<<<<<<< HEAD
+
 <!-- footer -->
 
 
 <!-- //footer -->
-=======
 
->>>>>>> d87d14041da770111194ed26e3f44d4639072c82
+
+
 <!--//main content start-->
 <!--start-smooth-scrolling-->
 <script type="text/javascript">
